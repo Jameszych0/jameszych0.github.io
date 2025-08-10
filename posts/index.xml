@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on James thoughts</title>
+    <title>Posts on Jameszych&#39;s thoughts</title>
     <link>https://jameszych0.github.io/posts/</link>
-    <description>Recent content in Posts on James thoughts</description>
+    <description>Recent content in Posts on Jameszych&#39;s thoughts</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 08 Aug 2025 18:05:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 Aug 2025 11:12:47 +0800</lastBuildDate>
     <atom:link href="https://jameszych0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>相向双指针</title>
+      <link>https://jameszych0.github.io/posts/%E7%9B%B8%E5%90%91%E5%8F%8C%E6%8C%87%E9%92%88/</link>
+      <pubDate>Sun, 10 Aug 2025 11:12:47 +0800</pubDate>
+      <guid>https://jameszych0.github.io/posts/%E7%9B%B8%E5%90%91%E5%8F%8C%E6%8C%87%E9%92%88/</guid>
+      <description>&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure class=&#34;&#34;&gt;&#xA;&#xA;    &lt;div class=&#34;img-container&#34; &gt;&#xA;        &lt;img loading=&#34;lazy&#34; alt=&#34;test&#34; src=&#34;http://gitee.com/Jameszych/drawing-bed/raw/master/2023/11/image-20231123101049115-1700705450026.png&#34; &gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>hugo博客搭建</title>
-      <link>https://jameszych0.github.io/posts/1.hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+      <link>https://jameszych0.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Fri, 08 Aug 2025 18:05:42 +0800</pubDate>
-      <guid>https://jameszych0.github.io/posts/1.hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https://jameszych0.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
       <description>&lt;p&gt;hugo由go编写&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>学会提问</title>
+      <link>https://jameszych0.github.io/posts/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/</link>
+      <pubDate>Fri, 08 Aug 2025 17:25:36 +0800</pubDate>
+      <guid>https://jameszych0.github.io/posts/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/</guid>
+      <description>&lt;p&gt;价值观是指人们认为有价值的观念&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure class=&#34; img-small&#34;&gt;&#xA;&#xA;    &lt;div class=&#34;img-container&#34; style=&#34;--w: 473; --h: 121;&#34;&gt;&#xA;        &lt;img loading=&#34;lazy&#34; alt=&#34;image-20250808233917789&#34; src=&#34;https://jameszych0.github.io/posts/assets/image-20250808233917789.png#small&#34; width=&#34;473&#34; height=&#34;121&#34;&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

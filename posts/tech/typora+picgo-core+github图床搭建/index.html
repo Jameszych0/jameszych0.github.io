@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-cn"
+  dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="https:/jameszych0.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https:/jameszych0.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https:/jameszych0.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https:/jameszych0.github.io/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https:/jameszych0.github.io/apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    typora&#43;picgo-core&#43;github图床搭建 | Jameszych&#39;s thoughts
+    
+</title>
+
+<link rel="canonical" href="https://jameszych0.github.io/posts/tech/typora&#43;picgo-core&#43;github%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/"/>
+
+<meta property="og:url" content="https://jameszych0.github.io/posts/tech/typora&#43;picgo-core&#43;github%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/">
+  <meta property="og:site_name" content="Jameszych&#39;s thoughts">
+  <meta property="og:title" content="typora&#43;picgo-core&#43;github图床搭建">
+  <meta property="og:description" content="个人技术博客">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-10T21:35:54+08:00">
+    <meta property="article:modified_time" content="2025-08-10T21:35:54+08:00">
+    <meta property="article:tag" content="博客">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.1288ccb77f1ee1f6c2fd5938f8b22c9d31517a6176b6f8f07ab4257a424650ed.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="light">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="https://jameszych0.github.io/">Jameszych&#39;s thoughts</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/categories" >
+                /categories
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/tags" >
+                /tags
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/about" >
+                /about
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+<div class="breadcrumbs"><a href="/">~</a><span class="breadcrumbs-separator">/</span><a href="/posts/">Posts</a><span class="breadcrumbs-separator">/</span>
+        <a href="/posts/tech/typora&#43;picgo-core&#43;github%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/">typora&#43;picgo-core&#43;github图床搭建</a></div>
+
+
+<div >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">typora&#43;picgo-core&#43;github图床搭建</h1>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="single-date">
+              <time datetime="2025-08-10T21:35:54&#43;08:00">August 10, 2025</time>
+            </p>
+          </div>
+        </div>
+        
+    </header>    
+        <div class="single-tags"><span>
+                  <a href="https://jameszych0.github.io/tags/%E5%8D%9A%E5%AE%A2/">#博客</a>
+                </span>
+        </div>
+      <aside class="toc">
+        <p><strong>Table of contents</strong></p>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#本地存储">本地存储</a></li>
+    <li><a href="#图床存储">图床存储</a>
+      <ul>
+        <li><a href="#github仓库配置">github仓库配置</a></li>
+        <li><a href="#typora配置">typora配置</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </aside>
+    
+    <div class="single-content">
+      <p>​	我们搭建完博客后，博客图片的存储问题随之而来。两个选择：本地存储、图床存储。</p>
+<h2 class="heading" id="本地存储">
+  本地存储
+  <a class="anchor" href="#%e6%9c%ac%e5%9c%b0%e5%ad%98%e5%82%a8">#</a>
+</h2>
+<p>​	将markdown文章放在文件目录content/posts下，通过设置typora即可完成。</p>
+<blockquote>
+<p>注：posts文件夹下不能有其他文件夹存放文章，其他文件夹的文章无法显示</p></blockquote>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250810235317972" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250810235319.png" >
+    </div>
+
+    
+</figure>
+</p>
+<h2 class="heading" id="图床存储">
+  图床存储
+  <a class="anchor" href="#%e5%9b%be%e5%ba%8a%e5%ad%98%e5%82%a8">#</a>
+</h2>
+<p>​	本地存储虽然方便，但是随着图片的增多会导致git仓库变得臃肿，还有一个最重要的原因，本地文章无法进行分类。我的设想是通过文件夹进行分类：</p>
+<ul>
+<li>posts
+<ul>
+<li>tech</li>
+<li>book</li>
+<li>&hellip;</li>
+</ul>
+</li>
+</ul>
+<p>​	这样的分类方法会导致图片无法正常显示，所以最后我采用了图床存储。</p>
+<h3 class="heading" id="github仓库配置">
+  github仓库配置
+  <a class="anchor" href="#github%e4%bb%93%e5%ba%93%e9%85%8d%e7%bd%ae">#</a>
+</h3>
+<blockquote>
+<p>注：图床的选择多样，但<strong>不要使用gitee仓库</strong>，图片也会无法显示</p></blockquote>
+<ol>
+<li>
+<p>创建一个公共项目</p>
+</li>
+<li>
+<p><a href="https://github.com/settings/tokens">点击此链接申请一个token</a></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250810224918703" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250810224920.png" >
+    </div>
+
+    
+</figure>
+</p>
+<p>选择<code>No expiration</code>，勾选repo，一定要保存好这个token，后面要用。</p>
+</li>
+</ol>
+<h3 class="heading" id="typora配置">
+  typora配置
+  <a class="anchor" href="#typora%e9%85%8d%e7%bd%ae">#</a>
+</h3>
+<ol>
+<li>
+<p>打开设置，按照下图设置</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250810225645182" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250810225647.png" >
+    </div>
+
+    
+</figure>
+</p>
+</li>
+<li>
+<p>点击下载或更新进行picgo-core的安装，找到picgo-core的安装路径，一般为<code>C:\Users\用户名\AppDataRoaming\Typorapicgo\win64</code>注意替换为自己的用户名</p>
+</li>
+<li>
+<p>在picgo-core的安装路径下进入cmd操作，安装插件(使图床中的图片按时间分类)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>./picgo.exe install super-prefix
+</span></span></code></pre></div><blockquote>
+<p>若报错<code>NPM is not installed</code>，是没安装node.js环境导致的</p></blockquote>
+</li>
+<li>
+<p>配置github仓库作为图床，通过上图typora界面的<code>打开配置文件</code>开始配置</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#0550ae">&#34;picBed&#34;</span><span style="color:#1f2328">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">&#34;current&#34;</span><span style="color:#1f2328">:</span> <span style="color:#0a3069">&#34;github&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">&#34;github&#34;</span><span style="color:#1f2328">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#0550ae">&#34;repo&#34;</span><span style="color:#1f2328">:</span> <span style="color:#0a3069">&#34;userName/repositoryName&#34;</span><span style="color:#1f2328">,</span> <span style="color:#57606a">// 你的仓库名
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>      <span style="color:#0550ae">&#34;branch&#34;</span><span style="color:#1f2328">:</span> <span style="color:#0a3069">&#34;main&#34;</span><span style="color:#1f2328">,</span> <span style="color:#57606a">// 仓库分支，一般为main
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>      <span style="color:#0550ae">&#34;token&#34;</span><span style="color:#1f2328">:</span> <span style="color:#0a3069">&#34;xxxxxxxxxxxxxx&#34;</span><span style="color:#1f2328">,</span> <span style="color:#57606a">// 上文申请的token
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>      <span style="color:#0550ae">&#34;path&#34;</span><span style="color:#1f2328">:</span> <span style="color:#0a3069">&#34;&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#0550ae">&#34;customUrl&#34;</span><span style="color:#1f2328">:</span> <span style="color:#0a3069">&#34;&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#0550ae">&#34;origin&#34;</span><span style="color:#1f2328">:</span> <span style="color:#0a3069">&#34;github&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#0550ae">&#34;picgoPlugins&#34;</span><span style="color:#1f2328">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">&#34;picgo-plugin-super-prefix&#34;</span><span style="color:#1f2328">:</span> <span style="color:#cf222e">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#0550ae">&#34;picgo-plugin-super-prefix&#34;</span><span style="color:#1f2328">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">&#34;prefixFormat&#34;</span><span style="color:#1f2328">:</span> <span style="color:#0a3069">&#34;YYYY/MM/&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">&#34;fileFormat&#34;</span><span style="color:#1f2328">:</span> <span style="color:#0a3069">&#34;YYYYMMDDHHmmss&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>配置完成，可以点击typora中的<code>验证图片上传选项</code>以验证是否成功</p>
+</li>
+</ol>
+<p>​	之后我们在编写文章时，图片就会直接上传到图床里，十分方便。但是由于是使用github作为图床的缘故，typora访问图片可能会无法加载。这个问题我们可以通过设置代理解决。</p>
+<ol>
+<li>
+<p>typora进入偏好设置, 在通用中下拉找到打开高级设置</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250810233213670" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250810233215.png" >
+    </div>
+
+    
+</figure>
+</p>
+</li>
+<li>
+<p>在资源管理器中选择<code>conf.user.json</code>，在flag字段添加自己的代理</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#f6f8fa;background-color:#82071e">/**</span> <span style="color:#f6f8fa;background-color:#82071e">For</span> <span style="color:#f6f8fa;background-color:#82071e">advanced</span> <span style="color:#f6f8fa;background-color:#82071e">users.</span> <span style="color:#f6f8fa;background-color:#82071e">*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#0550ae">&#34;defaultFontFamily&#34;</span><span style="color:#1f2328">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#0550ae">&#34;standard&#34;</span><span style="color:#1f2328">:</span> <span style="color:#cf222e">null</span><span style="color:#1f2328">,</span> <span style="color:#57606a">//String - Defaults to &#34;Times New Roman&#34;.
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#0550ae">&#34;serif&#34;</span><span style="color:#1f2328">:</span> <span style="color:#cf222e">null</span><span style="color:#1f2328">,</span> <span style="color:#57606a">// String - Defaults to &#34;Times New Roman&#34;.
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#0550ae">&#34;sansSerif&#34;</span><span style="color:#1f2328">:</span> <span style="color:#cf222e">null</span><span style="color:#1f2328">,</span> <span style="color:#57606a">// String - Defaults to &#34;Arial&#34;.
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#0550ae">&#34;monospace&#34;</span><span style="color:#1f2328">:</span> <span style="color:#cf222e">null</span> <span style="color:#57606a">// String - Defaults to &#34;Courier New&#34;.
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#0550ae">&#34;autoHideMenuBar&#34;</span><span style="color:#1f2328">:</span> <span style="color:#cf222e">false</span><span style="color:#1f2328">,</span> <span style="color:#57606a">//Boolean - Auto hide the menu bar unless the `Alt` key is pressed. Default is false.
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#57606a">// Array - Search Service user can access from context menu after a range of text is selected. Each item is formatted as [caption, url]
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#0550ae">&#34;searchService&#34;</span><span style="color:#1f2328">:</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#0a3069">&#34;Search with Google&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#0a3069">&#34;https://google.com/search?q=%s&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">],</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#57606a">// Custom key binding, which will override the default ones.
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#57606a">// see https://support.typora.io/Shortcut-Keys/#windows--linux for detail
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#0550ae">&#34;keyBinding&#34;</span><span style="color:#1f2328">:</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#57606a">// for example: 
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">// &#34;Always on Top&#34;: &#34;Ctrl+Shift+P&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>    <span style="color:#57606a">// All other options are the menu items &#39;text label&#39; displayed from each typora menu
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#1f2328">},</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#0550ae">&#34;monocolorEmoji&#34;</span><span style="color:#1f2328">:</span> <span style="color:#cf222e">false</span><span style="color:#1f2328">,</span> <span style="color:#57606a">//default false. Only work for Windows
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>  <span style="color:#0550ae">&#34;maxFetchCountOnFileList&#34;</span><span style="color:#1f2328">:</span> <span style="color:#0550ae">500</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#0550ae">&#34;flags&#34;</span><span style="color:#1f2328">:</span> <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">[</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#0a3069">&#34;proxy-server&#34;</span><span style="color:#1f2328">,</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#0a3069">&#34;socks5://127.0.0.1:7890&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1f2328">]</span> <span style="color:#57606a">// default [], append Chrome launch flags, e.g: [[&#34;disable-gpu&#34;], [&#34;host-rules&#34;, &#34;MAP * 127.0.0.1&#34;]]
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#1f2328">}</span>
+</span></span></code></pre></div></li>
+</ol>
+<p>​	这样typora也可以流畅地显示图片了。</p>
+<p>参考文章：</p>
+<ul>
+<li><a href="https://www.ruoyer.com/super-prefic.html">Markdown编辑器Typora使用PicGo-Core自动上传图片,并更改图片存储路径</a></li>
+<li><a href="https://blog.csdn.net/scdnplayer/article/details/116380432">typora picgo gitee 按年月日分类上传图片</a></li>
+<li><a href="https://www.bilibili.com/opus/738238602712973332">让Typora访问GitHub中的图像 / Typora启用代理</a></li>
+</ul>
+    </div>
+  </article>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/posts/alg/%E7%9B%B8%E5%90%91%E5%8F%8C%E6%8C%87%E9%92%88/">
+                        相向双指针
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+
+  </footer>
+
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>

@@ -10,10 +10,10 @@
     <atom:link href="https://jameszych0.github.io/categories/%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>学会提问</title>
-      <link>https://jameszych0.github.io/posts/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/</link>
+      <link>https://jameszych0.github.io/posts/lib/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/</link>
       <pubDate>Fri, 08 Aug 2025 17:25:36 +0800</pubDate>
-      <guid>https://jameszych0.github.io/posts/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/</guid>
-      <description>&lt;p&gt;价值观是指人们认为有价值的观念&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure class=&#34; img-small&#34;&gt;&#xA;&#xA;    &lt;div class=&#34;img-container&#34; style=&#34;--w: 473; --h: 121;&#34;&gt;&#xA;        &lt;img loading=&#34;lazy&#34; alt=&#34;image-20250808233917789&#34; src=&#34;https://jameszych0.github.io/posts/assets/image-20250808233917789.png#small&#34; width=&#34;473&#34; height=&#34;121&#34;&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
+      <guid>https://jameszych0.github.io/posts/lib/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/</guid>
+      <description>&lt;p&gt;价值观是指人们认为有价值的观念&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure class=&#34; img-small&#34;&gt;&#xA;&#xA;    &lt;div class=&#34;img-container&#34; &gt;&#xA;        &lt;img loading=&#34;lazy&#34; alt=&#34;image-20250808233917789&#34; src=&#34;assets/image-20250808233917789.png#small&#34; &gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

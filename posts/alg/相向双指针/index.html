@@ -41,7 +41,7 @@
 <meta property="og:url" content="https://jameszych0.github.io/posts/alg/%E7%9B%B8%E5%90%91%E5%8F%8C%E6%8C%87%E9%92%88/">
   <meta property="og:site_name" content="Jameszych&#39;s thoughts">
   <meta property="og:title" content="相向双指针">
-  <meta property="og:description" content="">
+  <meta property="og:description" content="个人技术博客">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -142,7 +142,7 @@
 
         <p
             class="small ">
-            <a href="/about" >
+            <a href="/resume.pdf" >
                 /about
             </a>
         </p>
@@ -183,51 +183,84 @@
         </div>
         
     </header>
+      <aside class="toc">
+        <p><strong>Table of contents</strong></p>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#167-两数之和-ii---输入有序数组"><a href="https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/">167. 两数之和 II - 输入有序数组</a></a>
+      <ul>
+        <li><a href="#暴力解法思路">暴力解法思路</a></li>
+        <li><a href="#双指针优化">双指针优化</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </aside>
     
     <div class="single-content">
-      <p>
-
-
-
-
-
-
-
-
-
-
-
-<figure class="">
-
-    <div class="img-container" >
-        <img loading="lazy" alt="image-20250810205235071" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250810205237.png" >
-    </div>
-
-    
-</figure>
-</p>
-<p>
-
-
-
-
-
-
-
-
-
-
-
-<figure class="">
-
-    <div class="img-container" >
-        <img loading="lazy" alt="image-20250810173628675" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250810173630.png" >
-    </div>
-
-    
-</figure>
-</p>
-
+      <p>这篇文章通过</p>
+<h2 class="heading" id="167-两数之和-ii---输入有序数组">
+  <a href="https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/">167. 两数之和 II - 输入有序数组</a>
+  <a class="anchor" href="#167-%e4%b8%a4%e6%95%b0%e4%b9%8b%e5%92%8c-ii---%e8%be%93%e5%85%a5%e6%9c%89%e5%ba%8f%e6%95%b0%e7%bb%84">#</a>
+</h2>
+<p><strong>题目要求：</strong></p>
+<p>给定一个 <strong>升序排序</strong> 的整数数组，从中找出两个数，使它们的和等于目标值 <code>target</code>，并返回它们的下标（下标从 1 开始计数）。</p>
+<h3 class="heading" id="暴力解法思路">
+  暴力解法思路
+  <a class="anchor" href="#%e6%9a%b4%e5%8a%9b%e8%a7%a3%e6%b3%95%e6%80%9d%e8%b7%af">#</a>
+</h3>
+<p>最直接的想法是使用 <strong>双重循环</strong> 枚举所有可能的两数组合，判断它们的和是否等于 <code>target</code>。</p>
+<p>暴力解法的时间复杂度就来到了$O(n^2)$，但是通过使用相向双指针可以将时间复杂度降到$O(n)$。</p>
+<h3 class="heading" id="双指针优化">
+  双指针优化
+  <a class="anchor" href="#%e5%8f%8c%e6%8c%87%e9%92%88%e4%bc%98%e5%8c%96">#</a>
+</h3>
+<p>由于数组是 <strong>有序的</strong>，我们可以用 <strong>相向双指针</strong> 将时间复杂度降到 $O(n)$。</p>
+<p><strong>思路：</strong></p>
+<ol>
+<li>初始化两个指针
+<ul>
+<li><code>left</code> 指向数组开头</li>
+<li><code>right</code> 指向数组末尾</li>
+</ul>
+</li>
+<li>计算当前两数之和 <code>sum = numbers[left] + numbers[right]</code></li>
+<li>判断：
+<ul>
+<li>sum &gt; target → 说明右边的数太大，<code>right--</code></li>
+<li>sum &lt; target → 说明左边的数太小，<code>left--</code></li>
+<li>sum == target → 找到答案</li>
+</ul>
+</li>
+<li>循环直到 <code>left &gt;= right</code> 结束</li>
+</ol>
+<p>这样可以保证：</p>
+<ul>
+<li>每次移动指针都会让搜索范围缩小</li>
+<li>不会漏掉任何可能的组合</li>
+</ul>
+<p><strong>代码实现：</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#cf222e">class</span> <span style="color:#1f2328">Solution</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#cf222e">public</span><span style="color:#0550ae">:</span>
+</span></span><span style="display:flex;"><span>    vector<span style="color:#0550ae">&lt;</span><span style="color:#cf222e">int</span><span style="color:#0550ae">&gt;</span> twoSum<span style="color:#1f2328">(</span>vector<span style="color:#0550ae">&lt;</span><span style="color:#cf222e">int</span><span style="color:#0550ae">&gt;&amp;</span> numbers<span style="color:#1f2328">,</span> <span style="color:#cf222e">int</span> target<span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">int</span> len <span style="color:#0550ae">=</span> numbers<span style="color:#1f2328">.</span>size<span style="color:#1f2328">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">int</span> left <span style="color:#0550ae">=</span> <span style="color:#0550ae">0</span><span style="color:#1f2328">,</span> right <span style="color:#0550ae">=</span> len <span style="color:#0550ae">-</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">while</span> <span style="color:#1f2328">(</span>left <span style="color:#0550ae">&lt;</span> right<span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">int</span> sum <span style="color:#0550ae">=</span> numbers<span style="color:#1f2328">[</span>left<span style="color:#1f2328">]</span> <span style="color:#0550ae">+</span> numbers<span style="color:#1f2328">[</span>right<span style="color:#1f2328">];</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#cf222e">if</span> <span style="color:#1f2328">(</span>sum <span style="color:#0550ae">&gt;</span> target<span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a">// 和过大，右指针左移
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                right<span style="color:#0550ae">--</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span> <span style="color:#cf222e">else</span> <span style="color:#6639ba">if</span> <span style="color:#1f2328">(</span>sum <span style="color:#0550ae">&lt;</span> target<span style="color:#1f2328">)</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#57606a">// 和过小，左指针右移
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span>                left<span style="color:#0550ae">++</span><span style="color:#1f2328">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span> <span style="color:#cf222e">else</span> <span style="color:#1f2328">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#cf222e">return</span> <span style="color:#1f2328">{</span>left <span style="color:#0550ae">+</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">,</span> right <span style="color:#0550ae">+</span> <span style="color:#0550ae">1</span><span style="color:#1f2328">};</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#cf222e">return</span> <span style="color:#1f2328">{};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">};</span>
+</span></span></code></pre></div>
     </div>
   </article>
 
@@ -248,7 +281,7 @@
             <div class="single-pagination-container-prev">
                 <div class="single-pagination-text">←</div>
                 <div class="single-pagination-text">
-                    <a href="/posts/tech/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                    <a href="/posts/tech/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/">
                         hugo博客搭建
                     </a>
                 </div>
@@ -312,6 +345,26 @@
 
   </footer>
 
+  
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ]
+    });
+  });
+</script>
   
 </body>
 

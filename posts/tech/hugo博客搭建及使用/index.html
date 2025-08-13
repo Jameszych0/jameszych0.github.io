@@ -32,7 +32,7 @@
 
 <title>
     
-    hugo博客搭建 | Jameszych&#39;s thoughts
+    hugo博客搭建及使用 | Jameszych&#39;s thoughts
     
 </title>
 
@@ -40,13 +40,14 @@
 
 <meta property="og:url" content="https://jameszych0.github.io/posts/tech/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/">
   <meta property="og:site_name" content="Jameszych&#39;s thoughts">
-  <meta property="og:title" content="hugo博客搭建">
-  <meta property="og:description" content="hugo由go编写">
+  <meta property="og:title" content="hugo博客搭建及使用">
+  <meta property="og:description" content="个人技术博客">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-08-08T18:05:42+08:00">
     <meta property="article:modified_time" content="2025-08-08T18:05:42+08:00">
+    <meta property="article:tag" content="博客">
 
 
 
@@ -167,10 +168,10 @@
       <div class="single-content">
         
         <div class="breadcrumbs"><a href="/">~</a><span class="breadcrumbs-separator">/</span><a href="/posts/">Posts</a><span class="breadcrumbs-separator">/</span>
-        <a href="/posts/tech/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/">hugo博客搭建</a></div>
+        <a href="/posts/tech/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8A%E4%BD%BF%E7%94%A8/">hugo博客搭建及使用</a></div>
         
         <header class="single-intro-container">
-          <h1 class="single-title">hugo博客搭建</h1>
+          <h1 class="single-title">hugo博客搭建及使用</h1>
           
           <div class="single-subsummary">
             
@@ -182,58 +183,497 @@
             </div>
           </div>
         </header>
+        <div class="single-tags"><span>
+            <a href="https://jameszych0.github.io/tags/%E5%8D%9A%E5%AE%A2/">#博客</a>
+          </span>
+        </div>
 
-        <p>hugo由go编写</p>
-<h2 class="heading" id="创建博客项目">
-  创建博客项目
-  <a class="anchor" href="#%e5%88%9b%e5%bb%ba%e5%8d%9a%e5%ae%a2%e9%a1%b9%e7%9b%ae">#</a>
+        <blockquote>
+<p><strong>常用 Hugo 命令速查表</strong></p></blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site <span style="color:#0550ae">[</span>项目名<span style="color:#0550ae">]</span> <span style="color:#57606a"># 创建hugo项目</span>
+</span></span><span style="display:flex;"><span>hugo new posts/xxx.md <span style="color:#57606a"># 创建文章</span>
+</span></span><span style="display:flex;"><span>hugo -D               <span style="color:#57606a"># 生成public静态资源</span>
+</span></span><span style="display:flex;"><span>hugo server -D        <span style="color:#57606a"># 生成public并启动hugo服务</span>
+</span></span></code></pre></div><h2 class="heading" id="1-为什么选择hugo">
+  1 为什么选择Hugo
+  <a class="anchor" href="#1-%e4%b8%ba%e4%bb%80%e4%b9%88%e9%80%89%e6%8b%a9hugo">#</a>
 </h2>
-<p><a href="/resume.pdf">个人简历</a></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site <span style="color:#0550ae">[</span>项目名<span style="color:#0550ae">]</span>
-</span></span></code></pre></div><h2 class="heading" id="配置博客">
-  配置博客
-  <a class="anchor" href="#%e9%85%8d%e7%bd%ae%e5%8d%9a%e5%ae%a2">#</a>
+<p>Hugo由go编写的静态网站生成器，具有以下特点：</p>
+<ul>
+<li>加载速度快</li>
+<li>部署简单</li>
+</ul>
+<h2 class="heading" id="2-博客配置">
+  2 博客配置
+  <a class="anchor" href="#2-%e5%8d%9a%e5%ae%a2%e9%85%8d%e7%bd%ae">#</a>
 </h2>
-<h3 class="heading" id="博客主题">
-  博客主题
-  <a class="anchor" href="#%e5%8d%9a%e5%ae%a2%e4%b8%bb%e9%a2%98">#</a>
+<h3 class="heading" id="21-创建博客">
+  2.1 创建博客
+  <a class="anchor" href="#21-%e5%88%9b%e5%bb%ba%e5%8d%9a%e5%ae%a2">#</a>
 </h3>
-<h3 class="heading" id="写文章">
-  写文章
-  <a class="anchor" href="#%e5%86%99%e6%96%87%e7%ab%a0">#</a>
+<ol>
+<li>
+<p><strong>下载Hugo</strong></p>
+<ul>
+<li>
+<p>访问<a href="https://github.com/gohugoio/hugo/releases">hugo github releases</a></p>
+</li>
+<li>
+<p>windows下载版本：<code>hugo_extended_withdeploy_xxxxx_windows-amd64.zip</code></p>
+</li>
+<li>
+<p>解压获得 <code>hugo.exe</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>创建Hugo项目</strong></p>
+<ul>
+<li>
+<p>将<code>hugo.exe</code>移入想要创建博客的文件夹中，并在该文件夹下打开命令行，输入命令创建hugo文件</p>
+</li>
+<li>
+<p>命令：<code>hugo new site [项目名]</code></p>
+</li>
+<li>
+<p>这里将该命令生成的hugo文件称作<strong>主文件夹</strong>，以便于下文的描述</p>
+</li>
+<li>
+<p>将<code>hugo.exe</code>移入主文件夹中</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250813091053455" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250813091057.png" >
+    </div>
+
+    
+</figure>
+</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>添加主题</strong></p>
+<ul>
+<li>
+<p>访问<a href="https://themes.gohugo.io/">Hugo Themes</a>选择自己喜欢的主题，进行下载</p>
+</li>
+<li>
+<p>这里以<a href="https://themes.gohugo.io/themes/typo/">typo</a>主题为例，将下载好的主题解压重命名为<code>typo</code>，放到<code>/themes</code>文件夹中</p>
+</li>
+<li>
+<p>将typo文件夹中的<code>content</code>和<code>hugo.toml</code>复制到主文件夹中</p>
+</li>
+<li>
+<p>在<code>hugo.toml</code>添加<code>theme = typo</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>启动本地预览</strong></p>
+<ul>
+<li>
+<p>在主文件夹中打开命令行启动hugo服务</p>
+</li>
+<li>
+<p>命令：<code>hugo server -D</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<p>到这里，博客成功启动，主题成功加载。</p>
+<p><strong>Hugo项目结构示例：</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>archetypes/      <span style="color:#57606a"># 文章模板</span>
+</span></span><span style="display:flex;"><span>    default.md 
+</span></span><span style="display:flex;"><span>content/         <span style="color:#57606a"># 存放文章</span>
+</span></span><span style="display:flex;"><span>public/          <span style="color:#57606a"># 生成的静态网页</span>
+</span></span><span style="display:flex;"><span>static/          <span style="color:#57606a"># 静态资源（图片、PDF 等）</span>
+</span></span><span style="display:flex;"><span>themes/          <span style="color:#57606a"># 主题文件夹</span>
+</span></span><span style="display:flex;"><span>hugo.toml        <span style="color:#57606a"># 配置文件</span>
+</span></span></code></pre></div><h3 class="heading" id="22-主题配置">
+  2.2 主题配置
+  <a class="anchor" href="#22-%e4%b8%bb%e9%a2%98%e9%85%8d%e7%bd%ae">#</a>
 </h3>
-<p>hugo new posts/文章名.md # 创建文章</p>
-<h2 class="heading" id="部署到github-pages">
-  部署到Github Pages
-  <a class="anchor" href="#%e9%83%a8%e7%bd%b2%e5%88%b0github-pages">#</a>
+<p>主题详细配置可参考 <a href="https://tomfran.github.io/typo-wiki/setup/">Typo Wiki</a>。</p>
+<p>以下是一个示例 <code>hugo.toml</code>（可直接套用并根据需求修改）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#1f2328">baseURL</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;https://你的GitHub用户名.github.io/&#39;</span> <span style="color:#57606a"># 部署地址</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">languageCode</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;zh-cn&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">title</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;我的 Hugo 博客&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">theme</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;typo&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># Google Analytics（可选）</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">googleAnalytics</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span><span style="color:#1f2328">taxonomies</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">tag</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;tags&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">category</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;categories&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span><span style="color:#1f2328">params</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">description</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;个人技术博客&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">theme</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;light&#39;</span> <span style="color:#57606a"># 自动切换暗/亮色</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">colorPalette</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;catpuccin&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">hideHeader</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">showFooter</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">disableImageProcessing</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">faviconPath</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">homeCollectionTitle</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;Posts&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">homeCollection</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">paginationSize</span> <span style="color:#1f2328">=</span> <span style="color:#0550ae">8</span> 
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">listSummaries</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">listDateFormat</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;2 Jan 2006&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span><span style="color:#1f2328">params</span><span style="color:#1f2328">.</span><span style="color:#1f2328">breadcrumbs</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">enabled</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">showCurrentPage</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">home</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;~&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[[</span><span style="color:#1f2328">params</span><span style="color:#1f2328">.</span><span style="color:#1f2328">menu</span><span style="color:#1f2328">]]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">name</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">url</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[[</span><span style="color:#1f2328">params</span><span style="color:#1f2328">.</span><span style="color:#1f2328">menu</span><span style="color:#1f2328">]]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">name</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">url</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;/posts&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[[</span><span style="color:#1f2328">params</span><span style="color:#1f2328">.</span><span style="color:#1f2328">menu</span><span style="color:#1f2328">]]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">name</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;categories&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">url</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;/categories&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[[</span><span style="color:#1f2328">params</span><span style="color:#1f2328">.</span><span style="color:#1f2328">menu</span><span style="color:#1f2328">]]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">name</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;tags&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">url</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;/tags&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[[</span><span style="color:#1f2328">params</span><span style="color:#1f2328">.</span><span style="color:#1f2328">menu</span><span style="color:#1f2328">]]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">name</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;about&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">url</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;/resume.pdf&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span><span style="color:#1f2328">markup</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span><span style="color:#1f2328">markup</span><span style="color:#1f2328">.</span><span style="color:#1f2328">highlight</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">codeFences</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">style</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;github&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">[</span><span style="color:#1f2328">params</span><span style="color:#1f2328">.</span><span style="color:#1f2328">giscus</span><span style="color:#1f2328">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">enable</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">false</span>
+</span></span></code></pre></div><p><strong>提示：</strong><code>[[params.menu]]</code> 用于设置导航栏，可以配置：</p>
+<ul>
+<li>categories</li>
+<li>tags</li>
+<li>posts中的文件夹</li>
+<li>static中的文件。</li>
+</ul>
+<h2 class="heading" id="3-博客部署">
+  3 博客部署
+  <a class="anchor" href="#3-%e5%8d%9a%e5%ae%a2%e9%83%a8%e7%bd%b2">#</a>
 </h2>
+<h3 class="heading" id="31-部署到github-pages">
+  3.1 部署到Github Pages
+  <a class="anchor" href="#31-%e9%83%a8%e7%bd%b2%e5%88%b0github-pages">#</a>
+</h3>
+<p>将public文件夹提交到github仓库里，通过github page发布。</p>
+<blockquote>
+<p>注：在主文件夹通过<code>hugo -D</code>生成public静态资源文件夹</p></blockquote>
+<ol>
+<li>
+<p>创建一个公共github仓库，仓库名<code>{github用户名}.github.io</code>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250813101515591" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250813101517.png" >
+    </div>
+
+    
+</figure>
+</p>
+</li>
+<li>
+<p>前往<code>Setting -&gt; Pages -&gt; Branch</code>选择main分支，然后保存，会自动开启<code>https://{github用户名}.github.io</code>的地址，这地址也是以后访问博客的地址</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250813101952080" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250813101953.png" >
+    </div>
+
+    
+</figure>
+</p>
+</li>
+<li>
+<p>将<code>public</code>文件夹提交到刚才创建的仓库中</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#0a3069">&#34;first commit&#34;</span>
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git remote add origin <span style="color:#0550ae">{</span>你的github仓库地址<span style="color:#0550ae">}</span>
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div></li>
+<li>
+<p>上传成功后访问 <code>https://{github用户名}.github.io</code>，成功搭建属于自己的Hugo博客</p>
+</li>
+</ol>
+<h3 class="heading" id="32-github-action自动化部署">
+  3.2 Github Action自动化部署
+  <a class="anchor" href="#32-github-action%e8%87%aa%e5%8a%a8%e5%8c%96%e9%83%a8%e7%bd%b2">#</a>
+</h3>
+<p>博客部署成功后，我们要通过以下步骤来提交博客：</p>
+<ol>
+<li>写完文章后，在主文件夹<code>hugo -D</code>生成public文件夹</li>
+<li>再把public文件夹push到仓库中</li>
+</ol>
+<p>这样难免有些繁琐，我们可以通过Github Action实现一步部署。</p>
+<ol>
+<li>
+<p>Github创建一个私有仓库，用于存放Hugo的主文件</p>
+</li>
+<li>
+<p>前往<code>Setttings -&gt; Developer Settings -&gt; Personal access tokens</code>，创建一个token(classic)</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250813103557271" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250813103559.png" >
+    </div>
+
+    
+</figure>
+</p>
+</li>
+<li>
+<p>为保证安全，将生成的token，保存的仓库的变量中，前往<code>Settings -&gt; Secrets and variables -&gt; Actions</code>中设置</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250813104351995" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250813104353.png" >
+    </div>
+
+    
+</figure>
+</p>
+</li>
+<li>
+<p>在hugo主文件创建一个<code>.github/workflows/xxxx.yaml</code>文件</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#0550ae">name</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>deploy<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a"># 代码提交到main分支时触发github action</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#0550ae">on</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span><span style="color:#0550ae">push</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">branches</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>- main<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#0550ae">jobs</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span><span style="color:#0550ae">deploy</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">runs-on</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>ubuntu-latest<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">steps</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>- <span style="color:#0550ae">name</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>Checkout<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">          </span><span style="color:#0550ae">uses</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>actions/checkout@v4<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">          </span><span style="color:#0550ae">with</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">              </span><span style="color:#0550ae">fetch-depth</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span><span style="color:#0550ae">0</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>- <span style="color:#0550ae">name</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>Setup Hugo<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">          </span><span style="color:#0550ae">uses</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>peaceiris/actions-hugo@v3<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">          </span><span style="color:#0550ae">with</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">              </span><span style="color:#0550ae">hugo-version</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span><span style="color:#0a3069">&#34;latest&#34;</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">              </span><span style="color:#0550ae">extended</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span><span style="color:#cf222e">true</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>- <span style="color:#0550ae">name</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>Build Web<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">          </span><span style="color:#0550ae">run</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>hugo -D<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">        </span>- <span style="color:#0550ae">name</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>Deploy Web<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">          </span><span style="color:#0550ae">uses</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>peaceiris/actions-gh-pages@v4<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">          </span><span style="color:#0550ae">with</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">              </span><span style="color:#0550ae">PERSONAL_TOKEN</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>${{ secrets.你的token变量名 }}<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">              </span><span style="color:#0550ae">EXTERNAL_REPOSITORY</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>你的github名/你的仓库名<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">              </span><span style="color:#0550ae">PUBLISH_BRANCH</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>main<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">              </span><span style="color:#0550ae">PUBLISH_DIR</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>./public<span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#fff">              </span><span style="color:#0550ae">commit_message</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>auto deploy<span style="color:#fff">
+</span></span></span></code></pre></div></li>
+<li>
+<p>在hugo主文件创建<code>.gitignore</code>文件，来避免提交不必要的文件</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#57606a"># 自动生成的文件</span>
+</span></span><span style="display:flex;"><span>public
+</span></span><span style="display:flex;"><span>resources
+</span></span><span style="display:flex;"><span>.hugo_build.lock
+</span></span><span style="display:flex;"><span><span style="color:#57606a"># hugo命令</span>
+</span></span><span style="display:flex;"><span>hugo.exe
+</span></span></code></pre></div></li>
+<li>
+<p>将hugo的主文件上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#0a3069">&#34;first commit&#34;</span>
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git remote add origin <span style="color:#0550ae">{</span>你的github仓库地址<span style="color:#0550ae">}</span>
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div></li>
+</ol>
+<h2 class="heading" id="4-博客使用">
+  4 博客使用
+  <a class="anchor" href="#4-%e5%8d%9a%e5%ae%a2%e4%bd%bf%e7%94%a8">#</a>
+</h2>
+<h3 class="heading" id="41-写文章">
+  4.1 写文章
+  <a class="anchor" href="#41-%e5%86%99%e6%96%87%e7%ab%a0">#</a>
+</h3>
+<ol>
+<li>
+<p>分类建议：</p>
+<ol>
+<li>线上通过categories和tags进行分类
+<ul>
+<li>categories进行文章类型的分类，比如阅读、技术、生活等</li>
+<li>tags进行文章更细化的分类，比如技术类，可以添加环境部署tag、编程语言tag等</li>
+</ul>
+</li>
+<li>本地通过文件夹分类
+<ul>
+<li>content
+<ul>
+<li>posts
+<ul>
+<li>分类1</li>
+<li>分类2</li>
+</ul>
+</li>
+<li>about.md</li>
+<li>_index.md</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>配置文章模板（<code>archetypes/default.md</code>）：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#f6f8fa;background-color:#82071e">+++</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">title</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;{{ replace .File.ContentBaseName `-` ` `  | title }}&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">date</span> <span style="color:#1f2328">=</span> <span style="color:#1f2328">{{</span> <span style="color:#1f2328">.</span><span style="color:#1f2328">Date</span> <span style="color:#1f2328">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">draft</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">tags</span> <span style="color:#1f2328">=</span> <span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">categories</span> <span style="color:#1f2328">=</span> <span style="color:#1f2328">[]</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">toc</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">showTags</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">math</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#1f2328">hideBackToTop</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#f6f8fa;background-color:#82071e">+++</span>
+</span></span></code></pre></div></li>
+<li>
+<p>创建文章</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new posts/分类1/文章名.md <span style="color:#57606a"># 创建文章</span>
+</span></span></code></pre></div></li>
+<li>
+<p>写完直接提交主文件夹即可（自动部署）：</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .
-</span></span><span style="display:flex;"><span>git commit -am <span style="color:#0a3069">&#34;xxx&#34;</span>
+</span></span><span style="display:flex;"><span>git commit -am <span style="color:#0a3069">&#34;注释&#34;</span>
 </span></span><span style="display:flex;"><span>git push
-</span></span><span style="display:flex;"><span>git pull
-</span></span></code></pre></div><h2 class="heading" id="多设备上传">
-  多设备上传
-  <a class="anchor" href="#%e5%a4%9a%e8%ae%be%e5%a4%87%e4%b8%8a%e4%bc%a0">#</a>
-</h2>
+</span></span></code></pre></div></li>
+</ol>
+<h3 class="heading" id="42-多设备写作">
+  4.2 多设备写作
+  <a class="anchor" href="#42-%e5%a4%9a%e8%ae%be%e5%a4%87%e5%86%99%e4%bd%9c">#</a>
+</h3>
 <p>如果后期需要使用其他电脑进行文章的上传，可以按照本节的描述操作。</p>
-<p>所以，我们只需要将<strong>该项目克隆下来</strong>即可实现多设备上传。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/Jameszych0/hugo_blog.git
-</span></span></code></pre></div><blockquote>
-<p>注：若多设备使用，提交前需使用<code>git pull</code>以保证项目一致</p></blockquote>
+<ul>
+<li>
+<p>在新电脑：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/你的用户名/你的主文件夹仓库.git
+</span></span></code></pre></div></li>
+<li>
+<p>写文章前先：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git pull
+</span></span></code></pre></div></li>
+</ul>
+<p><strong>参考资料</strong>：</p>
+<ul>
+<li><a href="https://gohugo.io/">Hugo 官方文档</a></li>
+<li><a href="https://tomfran.github.io/typo-wiki/">Typo 主题 Wiki</a></li>
+<li><a href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/">Hugo + GitHub Pages 部署示例</a></li>
+</ul>
       </div>
       <aside class="toc">
         <p><strong>Table of contents</strong></p>
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#创建博客项目">创建博客项目</a></li>
-    <li><a href="#配置博客">配置博客</a>
+    <li><a href="#1-为什么选择hugo">1 为什么选择Hugo</a></li>
+    <li><a href="#2-博客配置">2 博客配置</a>
       <ul>
-        <li><a href="#博客主题">博客主题</a></li>
-        <li><a href="#写文章">写文章</a></li>
+        <li><a href="#21-创建博客">2.1 创建博客</a></li>
+        <li><a href="#22-主题配置">2.2 主题配置</a></li>
       </ul>
     </li>
-    <li><a href="#部署到github-pages">部署到Github Pages</a></li>
-    <li><a href="#多设备上传">多设备上传</a></li>
+    <li><a href="#3-博客部署">3 博客部署</a>
+      <ul>
+        <li><a href="#31-部署到github-pages">3.1 部署到Github Pages</a></li>
+        <li><a href="#32-github-action自动化部署">3.2 Github Action自动化部署</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-博客使用">4 博客使用</a>
+      <ul>
+        <li><a href="#41-写文章">4.1 写文章</a></li>
+        <li><a href="#42-多设备写作">4.2 多设备写作</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </aside>

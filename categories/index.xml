@@ -6,8 +6,15 @@
     <description>Recent content in Categories on Jameszych&#39;s thoughts</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 11 Aug 2025 09:45:51 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Aug 2025 15:36:47 +0800</lastBuildDate>
     <atom:link href="https://jameszych0.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>算法</title>
+      <link>https://jameszych0.github.io/categories/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sat, 16 Aug 2025 15:36:47 +0800</pubDate>
+      <guid>https://jameszych0.github.io/categories/%E7%AE%97%E6%B3%95/</guid>
+      <description></description>
+    </item>
     <item>
       <title>深度学习</title>
       <link>https://jameszych0.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
@@ -20,13 +27,6 @@
       <link>https://jameszych0.github.io/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/</link>
       <pubDate>Sun, 10 Aug 2025 21:35:54 +0800</pubDate>
       <guid>https://jameszych0.github.io/categories/%E7%9E%8E%E6%8A%98%E8%85%BE/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>算法</title>
-      <link>https://jameszych0.github.io/categories/%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Sun, 10 Aug 2025 11:12:47 +0800</pubDate>
-      <guid>https://jameszych0.github.io/categories/%E7%AE%97%E6%B3%95/</guid>
       <description></description>
     </item>
     <item>

@@ -47,6 +47,8 @@
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-08-11T10:09:30+08:00">
     <meta property="article:modified_time" content="2025-08-11T10:09:30+08:00">
+    <meta property="article:tag" content="终端">
+    <meta property="article:tag" content="代理">
 
 
 
@@ -182,9 +184,92 @@
             </div>
           </div>
         </header>
+        <div class="single-tags"><span>
+            <a href="https://jameszych0.github.io/tags/%E7%BB%88%E7%AB%AF/">#终端</a>
+          </span><span>
+            <a href="https://jameszych0.github.io/tags/%E4%BB%A3%E7%90%86/">#代理</a>
+          </span>
+        </div>
 
-        
+        <h2 class="heading" id="1安装wsl">
+  1.安装wsl
+  <a class="anchor" href="#1%e5%ae%89%e8%a3%85wsl">#</a>
+</h2>
+<h2 class="heading" id="2wsl迁移至其他盘">
+  2.wsl迁移至其他盘
+  <a class="anchor" href="#2wsl%e8%bf%81%e7%a7%bb%e8%87%b3%e5%85%b6%e4%bb%96%e7%9b%98">#</a>
+</h2>
+<h3 class="heading" id="迁移">
+  迁移
+  <a class="anchor" href="#%e8%bf%81%e7%a7%bb">#</a>
+</h3>
+<p>（1）查看linux的<code>NAME</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl -l -v
+</span></span></code></pre></div><p>（2）停止正在运行的wsl</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --shutdown
+</span></span></code></pre></div><p>（3）将需要迁移的Linux进行导出</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --export NAME 需要迁移的位置<span style="color:#0550ae">(</span>D:<span style="color:#0a3069">\u</span>buntu<span style="color:#0550ae">)</span>
+</span></span></code></pre></div><p>（4）导出完成后，将原有的Linux卸载</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --unregister NAME
+</span></span></code></pre></div><p>（5）将导出的文件在其他盘进行导入</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --import NAME 需要导入的位置<span style="color:#0550ae">(</span>D:<span style="color:#0a3069">\u</span>buntu<span style="color:#0550ae">)</span>
+</span></span></code></pre></div><p>（6）将该系统设置为默认系统</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wslconfig /setdefault Name
+</span></span><span style="display:flex;"><span>如：wslconfig /setdefault Ubuntu-20.04
+</span></span></code></pre></div><h3 class="heading" id="设置默认用户">
+  设置默认用户
+  <a class="anchor" href="#%e8%ae%be%e7%bd%ae%e9%bb%98%e8%ae%a4%e7%94%a8%e6%88%b7">#</a>
+</h3>
+<p>进入新系统后，默认为root用户</p>
+<p>（1）添加新用户</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>useradd 用户名
+</span></span></code></pre></div><p>（2）为新用户添加权限</p>
+<p>打开<code>/etc/sudoers</code>，添加以下四行中任意一条</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>youuser <span style="color:#953800">ALL</span><span style="color:#0550ae">=(</span>ALL<span style="color:#0550ae">)</span> ALL
+</span></span><span style="display:flex;"><span>%youuser <span style="color:#953800">ALL</span><span style="color:#0550ae">=(</span>ALL<span style="color:#0550ae">)</span> ALL
+</span></span><span style="display:flex;"><span>youuser <span style="color:#953800">ALL</span><span style="color:#0550ae">=(</span>ALL<span style="color:#0550ae">)</span> NOPASSWD: ALL
+</span></span><span style="display:flex;"><span>%youuser <span style="color:#953800">ALL</span><span style="color:#0550ae">=(</span>ALL<span style="color:#0550ae">)</span> NOPASSWD: ALL
+</span></span></code></pre></div><p>（3）设置默认用户</p>
+<p>打开<code>/etc/wsl.conf</code>，添加</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#0550ae">[</span>user<span style="color:#0550ae">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#953800">default</span> <span style="color:#0550ae">=</span> NAME
+</span></span></code></pre></div><h2 class="heading" id="3配置wsl">
+  3.配置wsl
+  <a class="anchor" href="#3%e9%85%8d%e7%bd%aewsl">#</a>
+</h2>
+<h2 class="heading" id="4代理">
+  4.代理
+  <a class="anchor" href="#4%e4%bb%a3%e7%90%86">#</a>
+</h2>
+<p>当我们在进行终端中下载python库或者git提交到仓库等操作时，可能会出现网络问题。配置代理可有效解决该问题。</p>
+<p>将下面代码写入一个 bash 脚本<code>.proxyrc</code>，可以轻松的实现一键配置代理：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#57606a">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#953800">host_ip</span><span style="color:#0550ae">=</span><span style="color:#cf222e">$(</span>cat /etc/resolv.conf <span style="color:#1f2328">|</span>grep <span style="color:#0a3069">&#34;nameserver&#34;</span> <span style="color:#1f2328">|</span>cut -f <span style="color:#0550ae">2</span> -d <span style="color:#0a3069">&#34; &#34;</span><span style="color:#cf222e">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#6639ba">export</span> <span style="color:#953800">ALL_PROXY</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;http://</span><span style="color:#953800">$host_ip</span><span style="color:#0a3069">:7890&#34;</span>
+</span></span></code></pre></div><p>脚本通过 <code>cat /etc/resolv.conf</code> 来获取 DNS 服务器，也就是 Windows 的 IP，再将其中的 IP 部分截取出来，加上代理客户端的端口（我的是 7890，可以根据自己实际情况修改），使用 export 写入环境变量中。</p>
+<p>使用时只需要 <code>source .proxyrc</code> 就可以生效。</p>
+<p>同时，代理工具要开启<code>Allow LAN</code>。</p>
+<p><strong>参考文章：</strong></p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/153124468">为 WSL2 一键设置代理</a></li>
+</ul>
       </div>
+      <aside class="toc">
+        <p><strong>Table of contents</strong></p>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1安装wsl">1.安装wsl</a></li>
+    <li><a href="#2wsl迁移至其他盘">2.wsl迁移至其他盘</a>
+      <ul>
+        <li><a href="#迁移">迁移</a></li>
+        <li><a href="#设置默认用户">设置默认用户</a></li>
+      </ul>
+    </li>
+    <li><a href="#3配置wsl">3.配置wsl</a></li>
+    <li><a href="#4代理">4.代理</a></li>
+  </ul>
+</nav>
+      </aside>
     </div>
   </article>
 

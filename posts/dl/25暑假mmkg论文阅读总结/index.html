@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="zh-cn"
+  dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="https:/jameszych0.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https:/jameszych0.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https:/jameszych0.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https:/jameszych0.github.io/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https:/jameszych0.github.io/apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    25暑假mmkg论文阅读总结 | Jameszych&#39;s thoughts
+    
+</title>
+
+<link rel="canonical" href="https://jameszych0.github.io/posts/dl/25%E6%9A%91%E5%81%87mmkg%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%80%BB%E7%BB%93/"/>
+
+<meta property="og:url" content="https://jameszych0.github.io/posts/dl/25%E6%9A%91%E5%81%87mmkg%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%80%BB%E7%BB%93/">
+  <meta property="og:site_name" content="Jameszych&#39;s thoughts">
+  <meta property="og:title" content="25暑假mmkg论文阅读总结">
+  <meta property="og:description" content="个人技术博客">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-21T09:37:44+08:00">
+    <meta property="article:modified_time" content="2025-08-21T09:37:44+08:00">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.bd9c45048142a855ab50a9ccc201985cbe63b64e35810800dad8aa9601ab918f.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="light">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="https://jameszych0.github.io/">Jameszych&#39;s thoughts</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/categories" >
+                /categories
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/tags" >
+                /tags
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/resume.pdf" >
+                /about
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+<div >
+  <article>
+    <div class="single-main-container">
+      <div class="single-content">
+        
+        <div class="breadcrumbs"><a href="/">~</a><span class="breadcrumbs-separator">/</span><a href="/posts/">Posts</a><span class="breadcrumbs-separator">/</span>
+        <a href="/posts/dl/25%E6%9A%91%E5%81%87mmkg%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%80%BB%E7%BB%93/">25暑假mmkg论文阅读总结</a></div>
+        
+        <header class="single-intro-container">
+          <h1 class="single-title">25暑假mmkg论文阅读总结</h1>
+          
+          <div class="single-subsummary">
+            
+            <div>
+              
+              <p class="single-date">
+                <time datetime="2025-08-21T09:37:44&#43;08:00">August 21, 2025</time>
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <ol>
+<li>知识图谱推理(KGR)</li>
+<li>知识图谱补全(KGC)
+<ul>
+<li>实现 第六篇
+<ul>
+<li>基于嵌入的方法
+<ul>
+<li>将知识图谱的实体和关系嵌入到连续的表示空间中</li>
+</ul>
+</li>
+<li>基于预训练语言模型的方法(PLM)
+<ul>
+<li>将训练过程转变为基于文本的学习，这难以捕获知识图谱中复杂的结构信息</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>应用
+<ul>
+<li>链接预测
+<ul>
+<li>在知识图谱中推测缺失的关系或边</li>
+</ul>
+</li>
+<li>多模态关系抽取(MRE)
+<ul>
+<li>从多模态数据（主要是文本+图像）中识别出实体之间的关系</li>
+</ul>
+</li>
+<li>多模态命名实体识别(MNER)
+<ul>
+<li>识别文本中出现的命名实体（人名、地名、机构名、事件等），并借助图像等信息提升识别准确率。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>知识图谱应用
+<ul>
+<li>信息检索</li>
+<li>问答</li>
+<li>推荐系统</li>
+<li>时间序列预测</li>
+</ul>
+</li>
+</ol>
+<p>领域信息文本：将一个三元组转换成自然语言描述，从而把KG的结构信息转换成文本语义。</p>
+<h2 class="heading" id="2关系增强的多模态知识图谱补全负采样方法">
+  2.关系增强的多模态知识图谱补全负采样方法
+  <a class="anchor" href="#2%e5%85%b3%e7%b3%bb%e5%a2%9e%e5%bc%ba%e7%9a%84%e5%a4%9a%e6%a8%a1%e6%80%81%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1%e8%a1%a5%e5%85%a8%e8%b4%9f%e9%87%87%e6%a0%b7%e6%96%b9%e6%b3%95">#</a>
+</h2>
+<blockquote>
+<p>2022ACM MM_Relation-enhanced Negative Sampling for Multimodal Knowledge Graph Completion</p></blockquote>
+<h2 class="heading" id="3多模态知识图谱补全的混合transformer与多级融合方法">
+  3.多模态知识图谱补全的混合Transformer与多级融合方法
+  <a class="anchor" href="#3%e5%a4%9a%e6%a8%a1%e6%80%81%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1%e8%a1%a5%e5%85%a8%e7%9a%84%e6%b7%b7%e5%90%88transformer%e4%b8%8e%e5%a4%9a%e7%ba%a7%e8%9e%8d%e5%90%88%e6%96%b9%e6%b3%95">#</a>
+</h2>
+<blockquote>
+<p>2022SIGIR_Hybrid Transformer with Multi-level Fusion for Multimodal Knowledge Graph Completion</p></blockquote>
+<p>项目源码：https://github.com/zjunlp/MKGformer</p>
+<p><strong>问题：</strong></p>
+<ol>
+<li>架构通用性：不同的任务和模态需要修改模型架构</li>
+<li>模态矛盾：并非所有图像/物体都与文本输入相关，某些图像甚至包含大量可能误导实体表示的背景噪声</li>
+</ol>
+<p><strong>解决方案：</strong></p>
+<p>MKGformer利用一种具有统一输入-输出的混合Transformer架构，并通过包含粗粒度前缀引导交互(架构通用性)和细粒度相关性感知融合模块的多级融合机制(模态矛盾)，有效地整合了视觉和文本表示。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250821162858848" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250821162900.png" >
+    </div>
+
+    
+</figure>
+</p>
+<ol>
+<li>T-Encoder(文本编码器)
+<ul>
+<li>采用BERT的前LT层，用于捕获文本的句法和词汇信息。</li>
+</ul>
+</li>
+<li>V-Encoder(视觉编码器)
+<ul>
+<li>采用在ImageNet-1k上预训练的ViT的前LV层，用于从图像中提取视觉特征。</li>
+</ul>
+</li>
+<li>M-Encoder(多模态编码器)
+<ul>
+<li>粗粒度融合：前缀引导交互模块
+<ul>
+<li>通过修改注意力计算，以一种类似于线性插值的方式，将视觉和文本特征进行初步融合，从而预先减少模态异构性</li>
+</ul>
+</li>
+<li>细粒度融合： CAF相关性感知融合模块
+<ul>
+<li>通过计算文本token与图像块之间的相似度，为每个文本token聚合一个相关的视觉表示，并将其融入FFN的计算中，实现了图像-文本之间的精细对齐，从而有效缓解了不相关图像/物体带来的噪声。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="heading" id="4视觉-文本知识图谱表示学习">
+  4.视觉-文本知识图谱表示学习
+  <a class="anchor" href="#4%e8%a7%86%e8%a7%89-%e6%96%87%e6%9c%ac%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1%e8%a1%a8%e7%a4%ba%e5%ad%a6%e4%b9%a0">#</a>
+</h2>
+<blockquote>
+<p>2023findings-emnlp_Visual-Textual Knowledge Graph Representation Learning</p></blockquote>
+<p>项目源码：https://github.com/bdi-lab/VISTA</p>
+<p>与现有知识图谱不同，VTKG 不仅包含实体和关系，还允许三元组本身、实体和关系都拥有图像和文本描述。
+$(V, R, T, I, D)$</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250821150557654" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250821150602.png" >
+    </div>
+
+    
+</figure>
+</p>
+<ol>
+<li>通过ViT和Bert提取实体与关系的视觉和文本特征
+<ul>
+<li><strong>其中关系的视觉特征通过裁剪实体所在的边界框和包含两个实体的联合边界框提取</strong></li>
+</ul>
+</li>
+<li>实体 → 实体编码转换器 → 实体表示向量
+<ul>
+<li>将实体自身的学习向量以及其视觉和文本特征向量作为输入，通过多层 Transformer 编码器层，生成实体的最终表示向量</li>
+</ul>
+</li>
+<li>关系 → 关系编码转换器 → 关系表示向量
+<ul>
+<li>将关系的学习向量以及其视觉和文本特征向量作为输入，通过多层 Transformer 编码器层，生成关系的最终表示向量</li>
+</ul>
+</li>
+<li>三元组解码转换器 $⟨h,r,?⟩$
+<ul>
+<li>利用实体和关系的最终表示向量以及一个可学习的掩码向量，预测三元组中缺失的实体</li>
+<li>预测分数通过将解码器输出的尾部向量与所有候选实体的表示向量进行点积来计算，并选择得分最高的实体作为预测结果</li>
+</ul>
+</li>
+</ol>
+<h2 class="heading" id="5用于多模态知识图谱补全的超节点关系图注意力网络">
+  5.用于多模态知识图谱补全的超节点关系图注意力网络
+  <a class="anchor" href="#5%e7%94%a8%e4%ba%8e%e5%a4%9a%e6%a8%a1%e6%80%81%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1%e8%a1%a5%e5%85%a8%e7%9a%84%e8%b6%85%e8%8a%82%e7%82%b9%e5%85%b3%e7%b3%bb%e5%9b%be%e6%b3%a8%e6%84%8f%e5%8a%9b%e7%bd%91%e7%bb%9c">#</a>
+</h2>
+<blockquote>
+<p>2023TOMCCAP_Hyper-node Relational Graph Atention Network for Multi-modal Knowledge Graph Completion</p></blockquote>
+<p>项目源码：https://github.com/broliang/HRGAT</p>
+<p><strong>问题：</strong></p>
+<ol>
+<li>传统的知识图谱补全方法主要关注图中的关系信息，即将实体和关系简单地抽象为ID，而忽略了实体本身所携带的丰富多模态信息，如文本描述、图片和数值特征等</li>
+<li>信息不平衡，某些实体可能没有数值信息</li>
+<li>多模态数据难以在传统知识图谱的结构进行有效的表示学习</li>
+</ol>
+<p><strong>解决方案：</strong></p>
+<p>利用低秩多模态融合技术将原始知识图谱转化为超节点图，以有效建模实体内部和实体间的多模态动态性。随后，结合关系图注意力（RGAT）网络捕获图结构信息，并通过特定关系注意力及实体-关系融合操作来增强表示学习。最终，模型将多模态与图结构信息融合，生成用于知识图谱补全的嵌入。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250822140100774" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250822140105.png" >
+    </div>
+
+    
+</figure>
+</p>
+<ol>
+<li>信息融合模块 → 超节点
+<ol>
+<li>预训练嵌入(Pre-training embedding)
+<ul>
+<li>文本信息Bert：嵌入句子级描述</li>
+<li>视觉信息VGG-16</li>
+<li><strong>数值信息</strong>Bert：将数值特征视为(键,值)通过Bert进行嵌入</li>
+</ul>
+</li>
+<li>低秩多模态融合(Low-rank multi-modal fusion)
+<ul>
+<li>在获得不同模态的预训练嵌入后，将所有嵌入向量投影到相同大小</li>
+<li>这种方法优于传统的张量融合，因为它避免了创建高维张量而导致维度和空间复杂度呈指数级增长的问题</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>信息聚合模块
+<ul>
+<li>特定关系注意力：通过计算邻居节点与目标节点之间的重要性分数，模型能够区分不同邻居对目标节点的贡献程度，从而避免将所有邻居信息一概而论</li>
+<li>实体-关系融合：实体和关系不是孤立的。一个实体的信息必须与其连接的关系信息结合起来才有完整的意义</li>
+<li>关系聚合函数：模型根据上一步得到的注意力分数和融合后的实体-关系信息，对所有邻居的信息进行加权求和，从而得到目标实体的新表示</li>
+</ul>
+</li>
+<li>预测模块
+<ul>
+<li>预测模块用于实现知识图谱补全任务。该模块将信息聚合模块得到的实体和关系嵌入作为输入，并使用一个解码器来计算事实三元组的得分。</li>
+<li>选择 ConvE 作为解码器</li>
+<li>使用二元交叉熵作为损失函数</li>
+</ul>
+</li>
+</ol>
+<h2 class="heading" id="6使大型语言模型在知识图谱补全中表现更好">
+  6.使大型语言模型在知识图谱补全中表现更好
+  <a class="anchor" href="#6%e4%bd%bf%e5%a4%a7%e5%9e%8b%e8%af%ad%e8%a8%80%e6%a8%a1%e5%9e%8b%e5%9c%a8%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1%e8%a1%a5%e5%85%a8%e4%b8%ad%e8%a1%a8%e7%8e%b0%e6%9b%b4%e5%a5%bd">#</a>
+</h2>
+<blockquote>
+<p>2024ACM MM_Making Large Language Models Perform Better in Knowledge Graph Completion</p></blockquote>
+<p>项目源码：https://github.com/zjukg/KoPA</p>
+<p><strong>问题：</strong></p>
+<ul>
+<li>基于LLM的KGC的研究未能充分利用LLM的推理能力，忽略了知识图谱至关重要的结构信息</li>
+<li>将结构信息以文本形式输入到模型可能引入无效或冗余信息，导致提示过长，进而降低模型性能并增加计算成本</li>
+</ul>
+<p><strong>解决方案：</strong></p>
+<p>将现有的LLM范式，如情境学习（In-context Learning） 和指令微调（Instruction Tuning），转移到结构感知的环境中</p>
+<p>提出了一种新颖的知识前缀适配器（KoPA）方法。KoPA通过结构嵌入预训练来捕获知识图谱的结构信息，然后通过适配器将这些嵌入转换为虚拟知识Token，作为输入提示的前缀。这种跨模态的方法有效地将结构信息融入LLM，从而增强其知识推理能力。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250823164130796" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250823164135.png" >
+    </div>
+
+    
+</figure>
+</p>
+<ol>
+<li>结构嵌入预训练
+<ul>
+<li>KoPA没有将邻域信息文本添加到输入序列中，而是通过自监督结构嵌入预训练来提取实体和关系的结构信息</li>
+</ul>
+</li>
+<li>知识前缀适配器(KoPA)
+<ul>
+<li>由于预训练得到的结构嵌入与LLM的文本令牌表示空间不同，KoPA引入了一个知识前缀适配器</li>
+<li>这个适配器是一个简单的投影层，它将结构嵌入投影到LLM的文本表示空间，生成几个固定长度的虚拟知识令牌。这些Token作为输入提示的前缀，为LLM提供了辅助的结构信息，从而引导其进行结构感知推理</li>
+</ul>
+</li>
+<li>输入：指令提示I、三元组提示X、结构示例提示U(KoPA)</li>
+</ol>
+<h2 class="heading" id="7简单而有效用于多模态知识图谱推理的结构引导预训练transformer模型">
+  7.简单而有效：用于多模态知识图谱推理的结构引导预训练Transformer模型
+  <a class="anchor" href="#7%e7%ae%80%e5%8d%95%e8%80%8c%e6%9c%89%e6%95%88%e7%94%a8%e4%ba%8e%e5%a4%9a%e6%a8%a1%e6%80%81%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1%e6%8e%a8%e7%90%86%e7%9a%84%e7%bb%93%e6%9e%84%e5%bc%95%e5%af%bc%e9%a2%84%e8%ae%ad%e7%bb%83transformer%e6%a8%a1%e5%9e%8b">#</a>
+</h2>
+<blockquote>
+<p>2024ACM MM_Simple Yet Effective- Structure Guided Pre-trained Transformer for Multi-modal Knowledge Graph Reasoning</p></blockquote>
+<p><strong>问题：</strong></p>
+<p>未能利用结构信息</p>
+<p><strong>解决方案：</strong></p>
+<p>本文提出了结构引导多模态预训练Transformer模型Structure Guided Multi-modal Pre-trained Transformer model（SGMPT）</p>
+<p>该模型通过设计一个即插即用的结构引导融合模块，来利用之前MPT模型所忽略的结构信息。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250824173356370" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250824173400.png" >
+    </div>
+
+    
+</figure>
+</p>
+<ol>
+<li>
+<p>MKGformer，有文本编码器(Bert)、视觉编码器(ViT)以及多模态信息编码器</p>
+</li>
+<li>
+<p>结构编码器(HAKE)，将知识图谱的静态结构信息编码为特征向量</p>
+</li>
+<li>
+<p>结构引导融合模块(Structure-Guided Fusion Module)：一个即插即用的机制，旨在将结构信息融合到现有的MPT模型中。该模块包含两种策略，这两种策略可以单独或组合使用:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250824205621687" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250824205623.png" >
+    </div>
+
+    
+</figure>
+</p>
+<ol>
+<li>加权求和（Weighted Summation）： 直接将生成的结构嵌入与实体对应的文本和视觉嵌入相加 。</li>
+<li>对齐约束（Alignment Constraint）： 利用均方误差（MSE）损失等自监督对齐损失，通过对齐文本和视觉特征表示与结构特征表示来指导学习过程 。</li>
+</ol>
+</li>
+</ol>
+<h2 class="heading" id="8释放不平衡模态信息在多模态知识图谱补全中的力量">
+  8.释放不平衡模态信息在多模态知识图谱补全中的力量
+  <a class="anchor" href="#8%e9%87%8a%e6%94%be%e4%b8%8d%e5%b9%b3%e8%a1%a1%e6%a8%a1%e6%80%81%e4%bf%a1%e6%81%af%e5%9c%a8%e5%a4%9a%e6%a8%a1%e6%80%81%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1%e8%a1%a5%e5%85%a8%e4%b8%ad%e7%9a%84%e5%8a%9b%e9%87%8f">#</a>
+</h2>
+<blockquote>
+<p>2024arXiv_Unleashing the Power of Imbalanced Modality Information for Multi-modal Knowledge Graph Completion</p></blockquote>
+<p>项目源码：https://github.com/zjukg/AdaMF-MAT</p>
+<p><strong>问题：</strong></p>
+<p>实体之间模态信息不平衡的问题、模态融合不充分、原始模态信息利用效率低下</p>
+<p><strong>解决方案：</strong></p>
+<ul>
+<li>自适应多模态融合（AdaMF）：该模块能够选择性地提取关键的多模态特征，并生成代表性的联合嵌入。</li>
+<li>模态对抗训练（MAT）：该策略通过生成合成的多模态嵌入来构建对抗性样本，以增强有限的模态信息。</li>
+</ul>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250825142430569" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250825142435.png" >
+    </div>
+
+    
+</figure>
+</p>
+<ol>
+<li>多模态特征编码
+<ul>
+<li>使用预训练的视觉编码器（PVE）和文本编码器（PTE）从图像和文本描述中提取特征，并将其投影到与结构嵌入相同的空间中</li>
+</ul>
+</li>
+<li>自适应多模态融合
+<ul>
+<li>通过为不同实体学习不同的模态权重，自适应地融合结构、视觉和文本三种模态的信息，生成具有代表性的联合嵌入。评分函数采用 RotatE 模型，并使用 sigmoid 损失函数进行训练。</li>
+</ul>
+</li>
+<li>模态对抗训练：为了解决模态信息有限和不平衡的问题，作者引入了对抗训练。
+<ul>
+<li>生成器（MAG）：作为一个两层的前馈网络，它以结构嵌入为条件，生成合成的视觉和文本嵌入，从而构建对抗性样本。</li>
+<li>判别器（D）：评分函数 F 充当判别器，其目标是区分真实三元组和合成三元组。MAT 通过生成高质量的难负样本，直接增强了多模态嵌入的学习，与现有方法不同，它不需要从现有知识图谱中采样。</li>
+<li>训练目标：总体的训练目标是同时最小化 KGC 损失和对抗性损失，并在训练中迭代地优化判别器 D 和生成器 G。</li>
+</ul>
+</li>
+</ol>
+<h2 class="heading" id="9泛在多模态知识图谱补全">
+  9.泛在多模态知识图谱补全
+  <a class="anchor" href="#9%e6%b3%9b%e5%9c%a8%e5%a4%9a%e6%a8%a1%e6%80%81%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1%e8%a1%a5%e5%85%a8">#</a>
+</h2>
+<blockquote>
+<p>2024SIGIR_NativE- Multi-modal Knowledge Graph Completion in the Wild</p></blockquote>
+<p>项目源码：https://github.com/zjukg/NATIVE</p>
+<p><strong>问题：</strong></p>
+<p>模态多样性和不平衡性</p>
+<p><strong>解决方案：</strong></p>
+<p>提出了一个新颖的框架 NativE，它可以通过自适应融合和对抗性增强，将数字、音频、文本、图像、视频以及任何其他模态处理并融合到嵌入空间中。该框架由两个核心模块组成：关系引导双重自适应融合（ReDAF）模块，用于对任意模态进行自适应融合；以及协同模态对抗训练（CoMAT）模块，用于增强不平衡的模态信息。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="image-20250826155327489" src="https://raw.githubusercontent.com/Jameszych0/drawing_bed/main/2025/08/20250826155332.png" >
+    </div>
+
+    
+</figure>
+</p>
+<ol>
+<li>模态编码
+<ul>
+<li>结构嵌入是可学习的，其他是预训练的</li>
+</ul>
+</li>
+<li>关系引导双重自适应融合(ReDAF)
+<ul>
+<li>ReDAF包含一个自适应融合机制，该机制为不同模态使用一组自适应权重，当模态信息不平衡时，这些权重可以动态调整。
+<ul>
+<li>当某个模态信息缺失时，其对应的模态嵌入可能被随机初始化，这会导致其权重变小。这确保了在融合时，模型能够自动降低缺失或不完整模态信息的权重，从而减少其对最终联合嵌入的负面影响。</li>
+</ul>
+</li>
+<li>权重的计算公式还包括了结构嵌入和关系上下文
+<ul>
+<li>这意味着对于同一个实体，当它处于不同关系（例如，&ldquo;出生地&rdquo; vs. &ldquo;职业&rdquo;）的上下文中时，每种模态的重要性可能会有所不同，因此权重也会动态调整。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>协同模态对抗训练(CoMAT)
+<ul>
+<li>对抗训练来生成负采样</li>
+</ul>
+</li>
+</ol>
+<h2 class="heading" id="10基于-transformer-的多模态知识图谱补全并结合链接感知上下文">
+  10.基于 Transformer 的多模态知识图谱补全，并结合链接感知上下文
+  <a class="anchor" href="#10%e5%9f%ba%e4%ba%8e-transformer-%e7%9a%84%e5%a4%9a%e6%a8%a1%e6%80%81%e7%9f%a5%e8%af%86%e5%9b%be%e8%b0%b1%e8%a1%a5%e5%85%a8%e5%b9%b6%e7%bb%93%e5%90%88%e9%93%be%e6%8e%a5%e6%84%9f%e7%9f%a5%e4%b8%8a%e4%b8%8b%e6%96%87">#</a>
+</h2>
+<blockquote>
+<p>2025arXiv_Transformer-Based Multimodal Knowledge Graph Completion with Link-Aware Contexts</p></blockquote>
+      </div>
+      <aside class="toc">
+        <p><strong>Table of contents</strong></p>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#2关系增强的多模态知识图谱补全负采样方法">2.关系增强的多模态知识图谱补全负采样方法</a></li>
+    <li><a href="#3多模态知识图谱补全的混合transformer与多级融合方法">3.多模态知识图谱补全的混合Transformer与多级融合方法</a></li>
+    <li><a href="#4视觉-文本知识图谱表示学习">4.视觉-文本知识图谱表示学习</a></li>
+    <li><a href="#5用于多模态知识图谱补全的超节点关系图注意力网络">5.用于多模态知识图谱补全的超节点关系图注意力网络</a></li>
+    <li><a href="#6使大型语言模型在知识图谱补全中表现更好">6.使大型语言模型在知识图谱补全中表现更好</a></li>
+    <li><a href="#7简单而有效用于多模态知识图谱推理的结构引导预训练transformer模型">7.简单而有效：用于多模态知识图谱推理的结构引导预训练Transformer模型</a></li>
+    <li><a href="#8释放不平衡模态信息在多模态知识图谱补全中的力量">8.释放不平衡模态信息在多模态知识图谱补全中的力量</a></li>
+    <li><a href="#9泛在多模态知识图谱补全">9.泛在多模态知识图谱补全</a></li>
+    <li><a href="#10基于-transformer-的多模态知识图谱补全并结合链接感知上下文">10.基于 Transformer 的多模态知识图谱补全，并结合链接感知上下文</a></li>
+  </ul>
+</nav>
+      </aside>
+    </div>
+  </article>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/posts/tech/yazi%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+                        Yazi文件管理器操作及配置
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/posts/tech/neovim%E9%85%8D%E7%BD%AE%E5%8F%8A%E6%93%8D%E4%BD%9C/">
+                        Neovim配置及操作
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+
+  </footer>
+
+  
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ]
+    });
+  });
+</script>
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>

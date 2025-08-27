@@ -6,8 +6,43 @@
     <description>Recent content in Posts on Jameszych&#39;s thoughts</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 16 Aug 2025 15:36:47 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 23 Aug 2025 10:56:56 +0800</lastBuildDate>
     <atom:link href="https://jameszych0.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim配置及操作</title>
+      <link>https://jameszych0.github.io/posts/tech/neovim%E9%85%8D%E7%BD%AE%E5%8F%8A%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Sat, 23 Aug 2025 10:56:56 +0800</pubDate>
+      <guid>https://jameszych0.github.io/posts/tech/neovim%E9%85%8D%E7%BD%AE%E5%8F%8A%E6%93%8D%E4%BD%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>25暑假mmkg论文阅读总结</title>
+      <link>https://jameszych0.github.io/posts/dl/25%E6%9A%91%E5%81%87mmkg%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Thu, 21 Aug 2025 09:37:44 +0800</pubDate>
+      <guid>https://jameszych0.github.io/posts/dl/25%E6%9A%91%E5%81%87mmkg%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E6%80%BB%E7%BB%93/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yazi文件管理器操作及配置</title>
+      <link>https://jameszych0.github.io/posts/tech/yazi%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 19 Aug 2025 22:49:48 +0800</pubDate>
+      <guid>https://jameszych0.github.io/posts/tech/yazi%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E9%85%8D%E7%BD%AE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows平台软件推荐安装及配置</title>
+      <link>https://jameszych0.github.io/posts/tech/windows%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 19 Aug 2025 10:05:23 +0800</pubDate>
+      <guid>https://jameszych0.github.io/posts/tech/windows%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lazyvim操作</title>
+      <link>https://jameszych0.github.io/posts/tech/lazyvim%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 18 Aug 2025 17:31:02 +0800</pubDate>
+      <guid>https://jameszych0.github.io/posts/tech/lazyvim%E6%93%8D%E4%BD%9C/</guid>
+      <description></description>
+    </item>
     <item>
       <title>算法题中遇到的库函数和stl用法</title>
       <link>https://jameszych0.github.io/posts/alg/%E7%AE%97%E6%B3%95%E9%A2%98%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E5%BA%93%E5%87%BD%E6%95%B0%E5%92%8Cstl%E7%94%A8%E6%B3%95/</link>

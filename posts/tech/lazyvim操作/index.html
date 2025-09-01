@@ -184,79 +184,48 @@
         </header>
 
         <p>在lazyvim中，使用<code>?</code>查看按键绑定</p>
-<h2 class="heading" id="常见模式">
-  常见模式
-  <a class="anchor" href="#%e5%b8%b8%e8%a7%81%e6%a8%a1%e5%bc%8f">#</a>
+<h2 class="heading" id="normal模式">
+  Normal模式
+  <a class="anchor" href="#normal%e6%a8%a1%e5%bc%8f">#</a>
 </h2>
-<h3 class="heading" id="normal">
-  Normal
-  <a class="anchor" href="#normal">#</a>
-</h3>
 <p>用于处理文字
 对于提示</p>
 <ul>
 <li><code>tab</code>、<code>s tab</code> 选择</li>
 <li><code>enter</code> 确定</li>
 </ul>
-<h3 class="heading" id="visual">
-  Visual
-  <a class="anchor" href="#visual">#</a>
-</h3>
-<p>选择模式</p>
-<h3 class="heading" id="insert">
-  Insert
-  <a class="anchor" href="#insert">#</a>
-</h3>
-<p>1.如何进入插入模式</p>
-<ul>
-<li>
-<p>i 在光标的前面进行插入</p>
-</li>
-<li>
-<p>I 在句子的前面进行插入</p>
-</li>
-<li>
-<p>a 在光标的后面进行插入</p>
-</li>
-<li>
-<p>A 在句子的后面进行插入</p>
-</li>
-<li>
-<p>o 在当前行的下一行进行插入</p>
-</li>
-<li>
-<p>O 在当前行的上一行进行插入</p>
-</li>
-<li>
-<p>gi 移动到上一次插入的地方</p>
-</li>
-<li>
-<p>ctrl + R 打开寄存器 显示历史复制信息</p>
-</li>
-</ul>
-<h3 class="heading" id="command">
-  Command
-  <a class="anchor" href="#command">#</a>
-</h3>
-<p><code>Normal</code>模式下输入<code>:</code>进入<code>Command</code>模式</p>
-<p>常见命令</p>
-<ul>
-<li>q</li>
-<li>wq</li>
-<li>q!</li>
-<li>e <code>文件路径</code> 打开文件</li>
-</ul>
-<h2 class="heading" id="移动光标">
+<h3 class="heading" id="移动光标">
   移动光标
   <a class="anchor" href="#%e7%a7%bb%e5%8a%a8%e5%85%89%e6%a0%87">#</a>
-</h2>
-<h3 class="heading" id="s模式">
+</h3>
+<h4 class="heading" id="跳转">
+  跳转
+  <a class="anchor" href="#%e8%b7%b3%e8%bd%ac">#</a>
+</h4>
+<ul>
+<li>^ 跳转到行首</li>
+<li>$ 跳转到行尾</li>
+</ul>
+<h4 class="heading" id="f模式">
+  f模式
+  <a class="anchor" href="#f%e6%a8%a1%e5%bc%8f">#</a>
+</h4>
+<p>查找模式</p>
+<ul>
+<li>f 向后搜索</li>
+<li>F 向前搜索</li>
+<li>; 对搜索结果进行跳转</li>
+</ul>
+<h4 class="heading" id="s模式">
   s模式
   <a class="anchor" href="#s%e6%a8%a1%e5%bc%8f">#</a>
-</h3>
+</h4>
 <p>查找文本
 s: 按s进入搜索模式，输入想要跳转到的字母进行跳转</p>
-<p>滚动屏幕</p>
+<h4 class="heading" id="滚动屏幕">
+  滚动屏幕
+  <a class="anchor" href="#%e6%bb%9a%e5%8a%a8%e5%b1%8f%e5%b9%95">#</a>
+</h4>
 <ul>
 <li>ctrl + u 向上半个屏幕</li>
 <li>ctrl + d 向上半个屏幕</li>
@@ -270,16 +239,68 @@ s: 按s进入搜索模式，输入想要跳转到的字母进行跳转</p>
 <li>zz 当前行居中</li>
 <li>zt 当前行置顶</li>
 <li>zb 当前行置底</li>
+<li>za 折叠当前代码段</li>
 </ul>
-<h3 class="heading" id="f模式">
-  f模式
-  <a class="anchor" href="#f%e6%a8%a1%e5%bc%8f">#</a>
+<h3 class="heading" id="删除">
+  删除
+  <a class="anchor" href="#%e5%88%a0%e9%99%a4">#</a>
 </h3>
-<p>查找模式</p>
 <ul>
-<li>f 向后搜索</li>
-<li>F 向前搜索</li>
+<li>d</li>
 </ul>
+<h3 class="heading" id="其他">
+  其他
+  <a class="anchor" href="#%e5%85%b6%e4%bb%96">#</a>
+</h3>
+<ul>
+<li>~ 更改字母大小写</li>
+</ul>
+<h2 class="heading" id="visual">
+  Visual
+  <a class="anchor" href="#visual">#</a>
+</h2>
+<p>选择模式</p>
+<h2 class="heading" id="insert">
+  Insert
+  <a class="anchor" href="#insert">#</a>
+</h2>
+<ol>
+<li>如何进入插入模式
+<ul>
+<li>I 在句子的前面进行插入</li>
+<li>a 在光标的后面进行插入</li>
+<li>A 在句子的后面进行插入</li>
+<li>o 在当前行的下一行进行插入</li>
+<li>O 在当前行的上一行进行插入</li>
+<li>gi 移动到上一次插入的地方</li>
+<li>i 在光标的前面进行插入</li>
+</ul>
+</li>
+<li>在进入插入模式前
+<ul>
+<li>verb 输入数字，可进行重复的操作，比如重复输入verb遍文字</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>ctrl + R 打开寄存器 显示历史复制信息</li>
+</ul>
+<h2 class="heading" id="command">
+  Command
+  <a class="anchor" href="#command">#</a>
+</h2>
+<p><code>Normal</code>模式下输入<code>:</code>进入<code>Command</code>模式</p>
+<p>常见命令</p>
+<ul>
+<li>q</li>
+<li>wq</li>
+<li>q!</li>
+<li>e <code>文件路径</code> 打开文件</li>
+</ul>
+<h2 class="heading" id="移动光标-1">
+  移动光标
+  <a class="anchor" href="#%e7%a7%bb%e5%8a%a8%e5%85%89%e6%a0%87-1">#</a>
+</h2>
 <h2 class="heading" id="lazyvim系统设置">
   lazyvim系统设置
   <a class="anchor" href="#lazyvim%e7%b3%bb%e7%bb%9f%e8%ae%be%e7%bd%ae">#</a>
@@ -327,29 +348,27 @@ s: 按s进入搜索模式，输入想要跳转到的字母进行跳转</p>
 <p>ctrl + v: 将选中的文件向右分屏</p>
 </li>
 </ul>
-<h3 class="heading" id="文件buffer">
-  文件Buffer
-  <a class="anchor" href="#%e6%96%87%e4%bb%b6buffer">#</a>
-</h3>
-<ul>
-<li><!-- raw HTML omitted --> + h/l: 在buffer中移动</li>
-<li><!-- raw HTML omitted --> + b + d: 删除该buffer</li>
-</ul>
-<h2 class="heading" id="buffer--window--tab">
-  buffer / window / tab
-  <a class="anchor" href="#buffer--window--tab">#</a>
+<h2 class="heading" id="buffer--window--tab--session">
+  buffer / window / tab / session
+  <a class="anchor" href="#buffer--window--tab--session">#</a>
 </h2>
 <h3 class="heading" id="buffer">
   buffer
   <a class="anchor" href="#buffer">#</a>
 </h3>
-<p>buffers</p>
+<ul>
+<li>shift + h/l: 在buffer中移动</li>
+<li>space + b + d: 关闭该buffer</li>
+<li>space + b + o: 关闭其他buffer space + b + P: 关闭所有未buffer</li>
+<li>space + ,:打开buffers，可集中管理buffer</li>
+</ul>
 <h3 class="heading" id="window">
   window
   <a class="anchor" href="#window">#</a>
 </h3>
-<p>split
-vsplit</p>
+<p>快捷键：space + w</p>
+<p>split</p>
+<p>vsplit</p>
 <ul>
 <li><!-- raw HTML omitted -->h : 切换到左侧窗口</li>
 <li><!-- raw HTML omitted -->l ：切换到右侧窗口</li>
@@ -362,7 +381,45 @@ vsplit</p>
   tab
   <a class="anchor" href="#tab">#</a>
 </h3>
+<h3 class="heading" id="session">
+  session
+  <a class="anchor" href="#session">#</a>
+</h3>
+<p>在lazyvim的主界面，按 s 可以恢复上一次打开的session</p>
       </div>
+      <aside class="toc">
+        <p><strong>Table of contents</strong></p>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#normal模式">Normal模式</a>
+      <ul>
+        <li><a href="#移动光标">移动光标</a></li>
+        <li><a href="#z模式">z模式</a></li>
+        <li><a href="#删除">删除</a></li>
+        <li><a href="#其他">其他</a></li>
+      </ul>
+    </li>
+    <li><a href="#visual">Visual</a></li>
+    <li><a href="#insert">Insert</a></li>
+    <li><a href="#command">Command</a></li>
+    <li><a href="#移动光标-1">移动光标</a></li>
+    <li><a href="#lazyvim系统设置">lazyvim系统设置</a></li>
+    <li><a href="#基本文件操作">基本文件操作</a>
+      <ul>
+        <li><a href="#文件浏览器">文件浏览器</a></li>
+      </ul>
+    </li>
+    <li><a href="#buffer--window--tab--session">buffer / window / tab / session</a>
+      <ul>
+        <li><a href="#buffer">buffer</a></li>
+        <li><a href="#window">window</a></li>
+        <li><a href="#tab">tab</a></li>
+        <li><a href="#session">session</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </aside>
     </div>
   </article>
 

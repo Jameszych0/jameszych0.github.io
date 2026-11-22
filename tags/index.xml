@@ -1,47 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on Jameszych&#39;s thoughts</title>
-    <link>https://jameszych0.github.io/tags/</link>
-    <description>Recent content in Tags on Jameszych&#39;s thoughts</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 23 Aug 2025 10:56:56 +0800</lastBuildDate>
-    <atom:link href="https://jameszych0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Vim</title>
-      <link>https://jameszych0.github.io/tags/vim/</link>
-      <pubDate>Sat, 23 Aug 2025 10:56:56 +0800</pubDate>
-      <guid>https://jameszych0.github.io/tags/vim/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>代理</title>
-      <link>https://jameszych0.github.io/tags/%E4%BB%A3%E7%90%86/</link>
-      <pubDate>Tue, 19 Aug 2025 10:05:23 +0800</pubDate>
-      <guid>https://jameszych0.github.io/tags/%E4%BB%A3%E7%90%86/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>软件</title>
-      <link>https://jameszych0.github.io/tags/%E8%BD%AF%E4%BB%B6/</link>
-      <pubDate>Tue, 19 Aug 2025 10:05:23 +0800</pubDate>
-      <guid>https://jameszych0.github.io/tags/%E8%BD%AF%E4%BB%B6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>终端</title>
-      <link>https://jameszych0.github.io/tags/%E7%BB%88%E7%AB%AF/</link>
-      <pubDate>Mon, 11 Aug 2025 10:09:30 +0800</pubDate>
-      <guid>https://jameszych0.github.io/tags/%E7%BB%88%E7%AB%AF/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>博客</title>
-      <link>https://jameszych0.github.io/tags/%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Sun, 10 Aug 2025 21:35:54 +0800</pubDate>
-      <guid>https://jameszych0.github.io/tags/%E5%8D%9A%E5%AE%A2/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Tags on Jameszych&#39;s thoughts</title>
+		<link>https://jameszych0.github.io/tags/</link>
+		<description>Recent content in Tags on Jameszych&#39;s thoughts</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 21 Nov 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://jameszych0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Hugo</title>
+				<link>https://jameszych0.github.io/tags/hugo/</link>
+				<pubDate>Sat, 21 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://jameszych0.github.io/tags/hugo/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Obsidian</title>
+				<link>https://jameszych0.github.io/tags/obsidian/</link>
+				<pubDate>Sat, 21 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://jameszych0.github.io/tags/obsidian/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Zotero</title>
+				<link>https://jameszych0.github.io/tags/zotero/</link>
+				<pubDate>Sat, 06 Sep 2025 15:46:26 +0800</pubDate>
+				<guid>https://jameszych0.github.io/tags/zotero/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Vim</title>
+				<link>https://jameszych0.github.io/tags/vim/</link>
+				<pubDate>Sat, 23 Aug 2025 10:56:56 +0800</pubDate>
+				<guid>https://jameszych0.github.io/tags/vim/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>代理</title>
+				<link>https://jameszych0.github.io/tags/%E4%BB%A3%E7%90%86/</link>
+				<pubDate>Tue, 19 Aug 2025 10:05:23 +0800</pubDate>
+				<guid>https://jameszych0.github.io/tags/%E4%BB%A3%E7%90%86/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>软件</title>
+				<link>https://jameszych0.github.io/tags/%E8%BD%AF%E4%BB%B6/</link>
+				<pubDate>Tue, 19 Aug 2025 10:05:23 +0800</pubDate>
+				<guid>https://jameszych0.github.io/tags/%E8%BD%AF%E4%BB%B6/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>终端</title>
+				<link>https://jameszych0.github.io/tags/%E7%BB%88%E7%AB%AF/</link>
+				<pubDate>Mon, 11 Aug 2025 10:09:30 +0800</pubDate>
+				<guid>https://jameszych0.github.io/tags/%E7%BB%88%E7%AB%AF/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>博客</title>
+				<link>https://jameszych0.github.io/tags/%E5%8D%9A%E5%AE%A2/</link>
+				<pubDate>Sun, 10 Aug 2025 21:35:54 +0800</pubDate>
+				<guid>https://jameszych0.github.io/tags/%E5%8D%9A%E5%AE%A2/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

@@ -61,7 +61,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/combined.min.bd9c45048142a855ab50a9ccc201985cbe63b64e35810800dad8aa9601ab918f.css" media="all">
+<link rel="stylesheet" href="/assets/combined.min.9eec3b9be2a259c332644a3a6194d2b5a9ef55acaf8ae287f07e5be599a3a70f.css" media="all">
 
 
 
@@ -222,17 +222,17 @@
   <a class="anchor" href="#%e8%bf%81%e7%a7%bb">#</a>
 </h3>
 <p>（1）查看linux的<code>NAME</code></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl -l -v
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl -l -v
 </span></span></code></pre></div><p>（2）停止正在运行的wsl</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --shutdown
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --shutdown
 </span></span></code></pre></div><p>（3）将需要迁移的Linux进行导出</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --export NAME 需要迁移的位置<span style="color:#0550ae">(</span>D:<span style="color:#0a3069">\u</span>buntu<span style="color:#0550ae">)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --export NAME 需要迁移的位置<span style="color:#0550ae">(</span>D:<span style="color:#0a3069">\u</span>buntu<span style="color:#0550ae">)</span>
 </span></span></code></pre></div><p>（4）导出完成后，将原有的Linux卸载</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --unregister NAME
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --unregister NAME
 </span></span></code></pre></div><p>（5）将导出的文件在其他盘进行导入</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --import NAME 需要导入的位置<span style="color:#0550ae">(</span>D:<span style="color:#0a3069">\u</span>buntu<span style="color:#0550ae">)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsl --import NAME 需要导入的位置<span style="color:#0550ae">(</span>D:<span style="color:#0a3069">\u</span>buntu<span style="color:#0550ae">)</span>
 </span></span></code></pre></div><p>（6）将该系统设置为默认系统</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wslconfig /setdefault Name
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wslconfig /setdefault Name
 </span></span><span style="display:flex;"><span>如：wslconfig /setdefault Ubuntu-20.04
 </span></span></code></pre></div><h3 class="heading" id="设置默认用户">
   设置默认用户
@@ -240,16 +240,16 @@
 </h3>
 <p>进入新系统后，默认为root用户</p>
 <p>（1）添加新用户</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>useradd 用户名
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>useradd 用户名
 </span></span></code></pre></div><p>（2）为新用户添加权限</p>
 <p>打开<code>/etc/sudoers</code>，添加以下四行中任意一条</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>youuser <span style="color:#953800">ALL</span><span style="color:#0550ae">=(</span>ALL<span style="color:#0550ae">)</span> ALL
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>youuser <span style="color:#953800">ALL</span><span style="color:#0550ae">=(</span>ALL<span style="color:#0550ae">)</span> ALL
 </span></span><span style="display:flex;"><span>%youuser <span style="color:#953800">ALL</span><span style="color:#0550ae">=(</span>ALL<span style="color:#0550ae">)</span> ALL
 </span></span><span style="display:flex;"><span>youuser <span style="color:#953800">ALL</span><span style="color:#0550ae">=(</span>ALL<span style="color:#0550ae">)</span> NOPASSWD: ALL
 </span></span><span style="display:flex;"><span>%youuser <span style="color:#953800">ALL</span><span style="color:#0550ae">=(</span>ALL<span style="color:#0550ae">)</span> NOPASSWD: ALL
 </span></span></code></pre></div><p>（3）设置默认用户</p>
 <p>打开<code>/etc/wsl.conf</code>，添加</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#0550ae">[</span>user<span style="color:#0550ae">]</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#0550ae">[</span>user<span style="color:#0550ae">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#953800">default</span> <span style="color:#0550ae">=</span> NAME
 </span></span></code></pre></div><h2 class="heading" id="3配置wsl">
   3.配置wsl
@@ -261,8 +261,8 @@
 </h2>
 <p>当我们在进行终端中下载python库或者git提交到仓库等操作时，可能会出现网络问题。配置代理可有效解决该问题。</p>
 <p>将下面代码写入一个 bash 脚本<code>.proxyrc</code>，可以轻松的实现一键配置代理：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#57606a">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#57606a"></span><span style="color:#953800">host_ip</span><span style="color:#0550ae">=</span><span style="color:#cf222e">$(</span>cat /etc/resolv.conf <span style="color:#1f2328">|</span>grep <span style="color:#0a3069">&#34;nameserver&#34;</span> <span style="color:#1f2328">|</span>cut -f <span style="color:#0550ae">2</span> -d <span style="color:#0a3069">&#34; &#34;</span><span style="color:#cf222e">)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#57606a">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#953800">host_ip</span><span style="color:#0550ae">=</span><span style="color:#cf222e">$(</span>cat /etc/resolv.conf <span style="color:#1f2328">|</span>grep <span style="color:#0a3069">&#34;nameserver&#34;</span> <span style="color:#1f2328">|</span>cut -f <span style="color:#0550ae">2</span> -d <span style="color:#0a3069">&#34; &#34;</span><span style="color:#cf222e">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#6639ba">export</span> <span style="color:#953800">ALL_PROXY</span><span style="color:#0550ae">=</span><span style="color:#0a3069">&#34;http://</span><span style="color:#953800">$host_ip</span><span style="color:#0a3069">:7890&#34;</span>
 </span></span></code></pre></div><p>脚本通过 <code>cat /etc/resolv.conf</code> 来获取 DNS 服务器，也就是 Windows 的 IP，再将其中的 IP 部分截取出来，加上代理客户端的端口（我的是 7890，可以根据自己实际情况修改），使用 export 写入环境变量中。</p>
 <p>使用时只需要 <code>source .proxyrc</code> 就可以生效。</p>
@@ -308,7 +308,7 @@
             <div class="single-pagination-container-prev">
                 <div class="single-pagination-text">←</div>
                 <div class="single-pagination-text">
-                    <a href="/posts/dl/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+                    <a href="/posts/res/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
                         深度学习环境配置
                     </a>
                 </div>

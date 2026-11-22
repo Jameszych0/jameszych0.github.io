@@ -60,7 +60,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/combined.min.bd9c45048142a855ab50a9ccc201985cbe63b64e35810800dad8aa9601ab918f.css" media="all">
+<link rel="stylesheet" href="/assets/combined.min.9eec3b9be2a259c332644a3a6194d2b5a9ef55acaf8ae287f07e5be599a3a70f.css" media="all">
 
 
 
@@ -189,8 +189,9 @@
         </div>
 
         <blockquote>
-<p><strong>常用 Hugo 命令速查表</strong></p></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site <span style="color:#0550ae">[</span>项目名<span style="color:#0550ae">]</span> <span style="color:#57606a"># 创建hugo项目</span>
+<p><strong>常用 Hugo 命令速查表</strong></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site <span style="color:#0550ae">[</span>项目名<span style="color:#0550ae">]</span> <span style="color:#57606a"># 创建hugo项目</span>
 </span></span><span style="display:flex;"><span>hugo new posts/xxx.md <span style="color:#57606a"># 创建文章</span>
 </span></span><span style="display:flex;"><span>hugo -D               <span style="color:#57606a"># 生成public静态资源</span>
 </span></span><span style="display:flex;"><span>hugo server -D        <span style="color:#57606a"># 生成public并启动hugo服务</span>
@@ -295,7 +296,7 @@
 </ol>
 <p>到这里，博客成功启动，主题成功加载。</p>
 <p><strong>Hugo项目结构示例：</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>archetypes/      <span style="color:#57606a"># 文章模板</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>archetypes/      <span style="color:#57606a"># 文章模板</span>
 </span></span><span style="display:flex;"><span>    default.md 
 </span></span><span style="display:flex;"><span>content/         <span style="color:#57606a"># 存放文章</span>
 </span></span><span style="display:flex;"><span>public/          <span style="color:#57606a"># 生成的静态网页</span>
@@ -308,7 +309,7 @@
 </h3>
 <p>主题详细配置可参考 <a href="https://tomfran.github.io/typo-wiki/setup/">Typo Wiki</a>。</p>
 <p>以下是一个示例 <code>hugo.toml</code>（可直接套用并根据需求修改）：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#1f2328">baseURL</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;https://你的GitHub用户名.github.io/&#39;</span> <span style="color:#57606a"># 部署地址</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#1f2328">baseURL</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;https://你的GitHub用户名.github.io/&#39;</span> <span style="color:#57606a"># 部署地址</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">languageCode</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;zh-cn&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">title</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;我的 Hugo 博客&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">theme</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#39;typo&#39;</span>
@@ -388,7 +389,8 @@
 </h3>
 <p>将public文件夹提交到github仓库里，通过github page发布。</p>
 <blockquote>
-<p>注：在主文件夹通过<code>hugo -D</code>生成public静态资源文件夹</p></blockquote>
+<p>注：在主文件夹通过<code>hugo -D</code>生成public静态资源文件夹</p>
+</blockquote>
 <ol>
 <li>
 <p>创建一个公共github仓库，仓库名<code>{github用户名}.github.io</code>
@@ -439,7 +441,7 @@
 </li>
 <li>
 <p>将<code>public</code>文件夹提交到刚才创建的仓库中</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
 </span></span><span style="display:flex;"><span>git add .
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#0a3069">&#34;first commit&#34;</span>
 </span></span><span style="display:flex;"><span>git branch -M main
@@ -514,15 +516,15 @@
 </li>
 <li>
 <p>在hugo主文件创建一个<code>.github/workflows/xxxx.yaml</code>文件</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#0550ae">name</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>deploy<span style="color:#fff">
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#0550ae">name</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>deploy<span style="color:#fff">
 </span></span></span><span style="display:flex;"><span><span style="color:#fff">
-</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#57606a"># 代码提交到main分支时触发github action</span><span style="color:#fff">
-</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#0550ae">on</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#57606a"># 代码提交到main分支时触发github action</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#0550ae">on</span><span style="color:#1f2328">:</span><span style="color:#fff">
 </span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span><span style="color:#0550ae">push</span><span style="color:#1f2328">:</span><span style="color:#fff">
 </span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">branches</span><span style="color:#1f2328">:</span><span style="color:#fff">
 </span></span></span><span style="display:flex;"><span><span style="color:#fff">      </span>- main<span style="color:#fff">
 </span></span></span><span style="display:flex;"><span><span style="color:#fff">
-</span></span></span><span style="display:flex;"><span><span style="color:#fff"></span><span style="color:#0550ae">jobs</span><span style="color:#1f2328">:</span><span style="color:#fff">
+</span></span></span><span style="display:flex;"><span><span style="color:#0550ae">jobs</span><span style="color:#1f2328">:</span><span style="color:#fff">
 </span></span></span><span style="display:flex;"><span><span style="color:#fff">  </span><span style="color:#0550ae">deploy</span><span style="color:#1f2328">:</span><span style="color:#fff">
 </span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">runs-on</span><span style="color:#1f2328">:</span><span style="color:#fff"> </span>ubuntu-latest<span style="color:#fff">
 </span></span></span><span style="display:flex;"><span><span style="color:#fff">    </span><span style="color:#0550ae">steps</span><span style="color:#1f2328">:</span><span style="color:#fff">
@@ -551,7 +553,7 @@
 </span></span></span></code></pre></div></li>
 <li>
 <p>在hugo主文件创建<code>.gitignore</code>文件，来避免提交不必要的文件</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#57606a"># 自动生成的文件</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#57606a"># 自动生成的文件</span>
 </span></span><span style="display:flex;"><span>public
 </span></span><span style="display:flex;"><span>resources
 </span></span><span style="display:flex;"><span>.hugo_build.lock
@@ -560,7 +562,7 @@
 </span></span></code></pre></div></li>
 <li>
 <p>将hugo的主文件上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
 </span></span><span style="display:flex;"><span>git add .
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#0a3069">&#34;first commit&#34;</span>
 </span></span><span style="display:flex;"><span>git branch -M main
@@ -606,7 +608,7 @@
 </li>
 <li>
 <p>配置文章模板（<code>archetypes/default.md</code>）：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#f6f8fa;background-color:#82071e">+++</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#f6f8fa;background-color:#82071e">+++</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">title</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;{{ replace .File.ContentBaseName `-` ` `  | title }}&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">date</span> <span style="color:#1f2328">=</span> <span style="color:#1f2328">{{</span> <span style="color:#1f2328">.</span><span style="color:#1f2328">Date</span> <span style="color:#1f2328">}}</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">draft</span> <span style="color:#1f2328">=</span> <span style="color:#cf222e">true</span>
@@ -620,11 +622,11 @@
 </span></span></code></pre></div></li>
 <li>
 <p>创建文章</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new posts/分类1/文章名.md <span style="color:#57606a"># 创建文章</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new posts/分类1/文章名.md <span style="color:#57606a"># 创建文章</span>
 </span></span></code></pre></div></li>
 <li>
 <p>写完直接提交主文件夹即可（自动部署）：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .
 </span></span><span style="display:flex;"><span>git commit -am <span style="color:#0a3069">&#34;注释&#34;</span>
 </span></span><span style="display:flex;"><span>git push
 </span></span></code></pre></div></li>
@@ -637,11 +639,11 @@
 <ul>
 <li>
 <p>在新电脑：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/你的用户名/你的主文件夹仓库.git
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/你的用户名/你的主文件夹仓库.git
 </span></span></code></pre></div></li>
 <li>
 <p>写文章前先：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git pull
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git pull
 </span></span></code></pre></div></li>
 </ul>
 <p><strong>参考资料</strong>：</p>

@@ -62,7 +62,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/combined.min.bd9c45048142a855ab50a9ccc201985cbe63b64e35810800dad8aa9601ab918f.css" media="all">
+<link rel="stylesheet" href="/assets/combined.min.9eec3b9be2a259c332644a3a6194d2b5a9ef55acaf8ae287f07e5be599a3a70f.css" media="all">
 
 
 
@@ -194,18 +194,13 @@
           </span>
         </div>
 
-        <p>todo</p>
-<ul>
-<li>neovim无法解析c环境</li>
-</ul>
-<p>软件默认使用scoop下载</p>
+        <p>软件默认使用scoop下载</p>
 <h2 class="heading" id="下载工具">
   下载工具
   <a class="anchor" href="#%e4%b8%8b%e8%bd%bd%e5%b7%a5%e5%85%b7">#</a>
 </h2>
 <ul>
-<li>
-<p><a href="https://gitee.com/scoop-installer/scoop">scoop</a></p>
+<li><a href="https://gitee.com/scoop-installer/scoop">scoop</a>
 <ul>
 <li>add some buckets
 <ul>
@@ -215,33 +210,26 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  scoop cache rm *
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>  <span style="color:#57606a"># 清理安装包和缓存</span>
+</span></span><span style="display:flex;"><span>  scoop cache rm *
 </span></span><span style="display:flex;"><span>  scoop clean-up *
 </span></span></code></pre></div></li>
-<li>
-<p>aria2</p>
-</li>
-<li>
-<p>git</p>
-</li>
+<li>aria2</li>
+<li>git</li>
 </ul>
 <h2 class="heading" id="shell">
   shell
   <a class="anchor" href="#shell">#</a>
 </h2>
 <ul>
-<li>
-<p>pwsh 终端</p>
-</li>
-<li>
-<p>wezterm 终端模拟器</p>
-</li>
-<li>
-<p>oh-my-posh 终端主题</p>
-</li>
-<li>
-<p>CaskaydiaCove NF</p>
-</li>
+<li>pwsh 终端</li>
+<li>wezterm 终端模拟器</li>
+<li>oh-my-posh 终端主题</li>
+</ul>
+<p>字体</p>
+<ul>
+<li>CaskaydiaCove NF</li>
+<li>霞鹜文楷</li>
 </ul>
 <h2 class="heading" id="tool-language">
   tool language
@@ -249,6 +237,7 @@
 </h2>
 <ul>
 <li>python</li>
+<li>uv</li>
 <li>gcc</li>
 <li>nvm</li>
 <li>yarn
@@ -295,17 +284,20 @@
   windows下cpp语法高亮出错
   <a class="anchor" href="#windows%e4%b8%8bcpp%e8%af%ad%e6%b3%95%e9%ab%98%e4%ba%ae%e5%87%ba%e9%94%99">#</a>
 </h4>
-<p>建议使用wsl中的nvim</p>
+<p>使用xmake构建cpp项目，其中cpp文件可单独编译</p>
 <h4 class="heading" id="使用neovim来干嘛">
   使用neovim来干嘛？？？
   <a class="anchor" href="#%e4%bd%bf%e7%94%a8neovim%e6%9d%a5%e5%b9%b2%e5%98%9b">#</a>
 </h4>
+<ul>
+<li>vscode插件</li>
+<li>记笔记</li>
+</ul>
 <h2 class="heading" id="useful-tools">
   useful tools
   <a class="anchor" href="#useful-tools">#</a>
 </h2>
 <ul>
-<li>lazygit</li>
 <li>fzf</li>
 <li><a href="https://github.com/ajeetdsouza/zoxide">zoxide</a></li>
 <li>yazi</li>
@@ -326,7 +318,6 @@
 <ul>
 <li>存储文本片段</li>
 <li>查找文件 find everything</li>
-<li>图床上传</li>
 <li>翻译</li>
 <li>网页快开</li>
 <li>todo</li>
@@ -339,6 +330,12 @@
 机场：<a href="https://xn--6nq44r2uh9rhj7f.net/#/login">性价比机场</a>
 关闭系统代理，在对应软件设置代理</p>
 <ul>
+<li>
+<p>git</p>
+</li>
+<li>
+<p>wsl</p>
+</li>
 <li>
 <p>chrome</p>
 <ul>
@@ -353,7 +350,7 @@
 <ul>
 <li><code>echo $profile</code> 找到powershell的配置文件，写入：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps1" data-lang="ps1"><span style="display:flex;"><span><span style="color:#cf222e">function</span><span style="color:#fff"> </span><span style="color:#6639ba">proxy</span> <span style="color:#1f2328">{</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ps1" data-lang="ps1"><span style="display:flex;"><span><span style="color:#cf222e">function</span><span style="color:#fff"> </span><span style="color:#6639ba">proxy</span> <span style="color:#1f2328">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#953800">$env:http_proxy</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;http://127.0.0.1:7890&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#953800">$env:https_proxy</span> <span style="color:#1f2328">=</span> <span style="color:#0a3069">&#34;http://127.0.0.1:7890&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#1f2328">[</span><span style="color:#0550ae">System.Net.WebRequest</span><span style="color:#1f2328">]::</span>DefaultWebProxy <span style="color:#1f2328">=</span> <span style="color:#6639ba">New-Object</span> System<span style="color:#1f2328">.</span>Net<span style="color:#1f2328">.</span>WebProxy<span style="color:#1f2328">(</span><span style="color:#0a3069">&#34;http://127.0.0.1:7890&#34;</span><span style="color:#1f2328">)</span>
@@ -377,12 +374,6 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#1f2328">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#1f2328">}</span>
 </span></span></code></pre></div></li>
-<li>
-<p>wsl</p>
-</li>
-<li>
-<p>git</p>
-</li>
 </ul>
 <h2 class="heading" id="开发环境">
   开发环境
@@ -403,35 +394,41 @@
 <li>配置系统环境变量
 <blockquote>
 <p>变量：JAVA_HOME
-值：jdk的安装路径，例如<code>E:\DevTools\Java\jdk-24</code></p></blockquote>
+值：jdk的安装路径，例如<code>E:\DevTools\Java\jdk-24</code></p>
+</blockquote>
 </li>
 <li>在系统环境变量Path后面追加
 <blockquote>
 <p>%JAVA_HOME%\bin
-注意：<code>%JAVA_HOME%\bin</code>要放到path最上面，因为JDK17安装的时候会默认添加一个环境变量而且在<code>path</code>中优先级比我们配置的高</p></blockquote>
+注意：<code>%JAVA_HOME%\bin</code>要放到path最上面，因为JDK17安装的时候会默认添加一个环境变量而且在<code>path</code>中优先级比我们配置的高</p>
+</blockquote>
 </li>
 </ol>
 <p>或者，可以使用scoop进行jdk的安装管理</p>
 <ol>
 <li>添加 Java bucket
 <blockquote>
-<p>scoop bucket add java</p></blockquote>
+<p>scoop bucket add java</p>
+</blockquote>
 </li>
 <li>安装不同版本的 JDK
 比如安装 OpenJDK 17 和 21：
 <blockquote>
 <p>scoop install openjdk17
-scoop install openjdk21</p></blockquote>
+scoop install openjdk21</p>
+</blockquote>
 </li>
 <li>查看已安装版本
 <blockquote>
-<p>scoop list</p></blockquote>
+<p>scoop list</p>
+</blockquote>
 </li>
 <li>切换默认版本（reset 命令）
 Scoop 默认会把安装的 app 链接到 ~/scoop/apps/<!-- raw HTML omitted -->/current，你可以用 reset 来切换：
 <blockquote>
 <p>scoop reset openjdk17 #或者
-scoop reset openjdk21</p></blockquote>
+scoop reset openjdk21</p>
+</blockquote>
 </li>
 </ol>
 <p>切换后，用 java -version 验证。</p>
@@ -454,29 +451,29 @@ scoop reset openjdk21</p></blockquote>
 </h3>
 <p>中间件最好通过服务器远程连接，下面提供一些docker安装命令</p>
 <p><strong>mysql</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run --name dev-mysql -d <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>-m 512M --memory-swap 1G <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>-p 3306:3306 <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>--restart always <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>-v /usr/loca/data/mysql/conf:/etc/mysql/conf.d -e <span style="color:#953800">MYSQL_ROOT_PASSWORD</span><span style="color:#0550ae">=</span><span style="color:#0550ae">197803</span> mysql:5.7
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run --name dev-mysql -d <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>-m 512M --memory-swap 1G <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>-p 3306:3306 <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>--restart always <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>-v /usr/loca/data/mysql/conf:/etc/mysql/conf.d -e <span style="color:#953800">MYSQL_ROOT_PASSWORD</span><span style="color:#0550ae">=</span><span style="color:#0550ae">197803</span> mysql:5.7
 </span></span></code></pre></div><p><strong>redis</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> docker run <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>--name dev-redis <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>-p 6379:6379 <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>--restart unless-stopped <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>-v ~/data/redis/data/data <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>-v ~/data/redis/conf/redis.conf:/etc/redis/redis.conf <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>-d redis:bullseye <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>redis-server /etc/redis/redis.conf
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> docker run <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>--name dev-redis <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>-p 6379:6379 <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>--restart unless-stopped <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>-v ~/data/redis/data/data <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>-v ~/data/redis/conf/redis.conf:/etc/redis/redis.conf <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>-d redis:bullseye <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>redis-server /etc/redis/redis.conf
 </span></span></code></pre></div><p><strong>minio</strong>
 对象存储容器</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -p 9000:9000 -p 9090:9090 --name minio <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>     -d --restart<span style="color:#0550ae">=</span>always <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>     -e <span style="color:#0a3069">&#34;MINIO_ACCESS_KEY=minio&#34;</span> <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>     -e <span style="color:#0a3069">&#34;MINIO_SECRET_KEY=password&#34;</span> <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>     -v ~/data/minio:/data <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>     docker.m.daocloud.io/minio/minio server <span style="color:#0a3069">\
-</span></span></span><span style="display:flex;"><span><span style="color:#0a3069"></span>     /data --console-address <span style="color:#0a3069">&#34;:9090&#34;</span> --address <span style="color:#0a3069">&#34;:9000&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker run -p 9000:9000 -p 9090:9090 --name minio <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>     -d --restart<span style="color:#0550ae">=</span>always <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>     -e <span style="color:#0a3069">&#34;MINIO_ACCESS_KEY=minio&#34;</span> <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>     -e <span style="color:#0a3069">&#34;MINIO_SECRET_KEY=password&#34;</span> <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>     -v ~/data/minio:/data <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>     docker.m.daocloud.io/minio/minio server <span style="color:#0a3069">\
+</span></span></span><span style="display:flex;"><span>     /data --console-address <span style="color:#0a3069">&#34;:9090&#34;</span> --address <span style="color:#0a3069">&#34;:9000&#34;</span>
 </span></span></code></pre></div><h2 class="heading" id="game">
   game
   <a class="anchor" href="#game">#</a>
